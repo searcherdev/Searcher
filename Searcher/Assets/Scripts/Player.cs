@@ -21,6 +21,9 @@ public class Player : MonoBehaviour
     private float camHeight;
     private float camWidth;
 
+    //N0M-AD
+    private N0MAD n0mad;
+
     //==== PROPERTIES ====
     //Vectors
     public Vector3 Position { get { return position; } }
@@ -44,10 +47,17 @@ public class Player : MonoBehaviour
         //Set position
         position = transform.position;
 
+        //Set N0M-AD
+        n0mad = GetComponent<N0MAD>();
+
         //Set movement values (NOTE: WILL BE REPLACED WITH EVENTUAL N0M-AD CLASS VALUES)
-        accel = 1f;
+        accel = n0mad.Engine.Accel;
+        maxSpeed = n0mad.Engine.MaxSpeed;
+        rotSpeed = n0mad.Engine.RotSpeed;
+
+        /*accel = 1f;
         maxSpeed = 5f;
-        rotSpeed = 50f;
+        rotSpeed = 50f;*/
     }
 
     //==== UPDATE ====
