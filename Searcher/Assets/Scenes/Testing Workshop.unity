@@ -324,7 +324,7 @@ GameObject:
   - component: {fileID: 309350832}
   - component: {fileID: 309350831}
   m_Layer: 0
-  m_Name: StarManager
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -358,7 +358,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1129844183
+--- !u!1001 &1449073511
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -368,11 +368,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 209442312582765912, guid: a77290c58e1246a4e8cc9866bf3d371e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.5757
       objectReference: {fileID: 0}
     - target: {fileID: 209442312582765912, guid: a77290c58e1246a4e8cc9866bf3d371e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.62999
       objectReference: {fileID: 0}
     - target: {fileID: 209442312582765912, guid: a77290c58e1246a4e8cc9866bf3d371e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -422,4 +422,4 @@ SceneRoots:
   - {fileID: 254706680}
   - {fileID: 302028532}
   - {fileID: 309350832}
-  - {fileID: 1129844183}
+  - {fileID: 1449073511}

@@ -50,14 +50,10 @@ public class Player : MonoBehaviour
         //Set N0M-AD
         n0mad = GetComponent<N0MAD>();
 
-        //Set movement values (NOTE: WILL BE REPLACED WITH EVENTUAL N0M-AD CLASS VALUES)
+        //Set movement values
         accel = n0mad.Engine.Accel;
         maxSpeed = n0mad.Engine.MaxSpeed;
         rotSpeed = n0mad.Engine.RotSpeed;
-
-        /*accel = 1f;
-        maxSpeed = 5f;
-        rotSpeed = 50f;*/
     }
 
     //==== UPDATE ====
@@ -67,7 +63,7 @@ public class Player : MonoBehaviour
         if (Keyboard.current.leftArrowKey.isPressed) { velocity.x -= (accel * Time.deltaTime); } //Left
         if (Keyboard.current.rightArrowKey.isPressed) { velocity.x += (accel * Time.deltaTime); } //Right
         if (Keyboard.current.downArrowKey.isPressed) { velocity.y -= (accel * Time.deltaTime); } //Down
-        if (Keyboard.current.upArrowKey.isPressed) { velocity.y += (accel * Time.deltaTime); }//Up
+        if (Keyboard.current.upArrowKey.isPressed) { velocity.y += (accel * Time.deltaTime); } //Up
 
         //Clamp Movement Speed
         if (velocity.x <= -maxSpeed) velocity.x = -maxSpeed;

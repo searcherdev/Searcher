@@ -5,15 +5,15 @@ public class N0MAD : MonoBehaviour
     //NOTE: Though the character's name is N0M-AD, the dash in the name caused problems in the code, so to prevent that the class name removes the dash
 
     //==== FIELDS ====
-    private int energy;
-    private int maxEnergy;
+    private float energy;
+    private float maxEnergy;
     private Engine engine;
 
     private float timer;
 
     //==== PROPERTIES ====
-    public int Energy { get { return energy; } set { energy = value; } }
-    public int MaxEnergy { get { return maxEnergy; } set { maxEnergy = value; } }   
+    public float Energy { get { return energy; } set { energy = value; } }
+    public float MaxEnergy { get { return maxEnergy; } set { maxEnergy = value; } }   
     public Engine Engine { get { return engine; } set { engine = value; } }
     
     //==== START ====
