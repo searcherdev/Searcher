@@ -6,14 +6,17 @@ public class StarManager : MonoBehaviour
     //==== FIELDS ====
     private List<GameObject> stars = new List<GameObject>();
     [SerializeField] private GameObject star;
-    private int numStars = 100;
-    private const float min = -20;
-    private const float max = 20;
+    private int numStars = 1000;
+    private const float min = -100;
+    private const float max = 100;
 
     //Camera
     private Camera cam;
     private float camHeight;
     private float camWidth;
+
+    //==== PROPERTIES ====
+    public List<GameObject> Stars { get { return stars; } }
 
     //==== START ====
     void Start()
