@@ -11,11 +11,14 @@ public class Asteroid : MonoBehaviour
     private Vector3 direction = Vector3.zero;
     private Vector3 velocity = Vector3.zero;
 
+    private bool isColliding;
+
     //==== PROPERTIES ====
     public float Scale { get { return scale; } }
     public Vector3 Position { get { return position; } }
     public Vector3 Direction { get { return direction; } }
     public Vector3 Velocity { get { return velocity; } }
+    public bool IsColliding { get { return isColliding; } set { isColliding = value; } }
 
     //==== START ====
     void Start()

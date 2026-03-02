@@ -27,13 +27,29 @@ public class CollisionManager : MonoBehaviour
         //For each asteroid...
         foreach(GameObject a in asteroids)
         {
+            a.GetComponent<SpriteRenderer>().color = Color.white;   
+
             //Check Player/Asteroid Collisions
-            if (collisions.CheckColliderCollision(player, a))
+            if (collisions.CheckSpriteCollision(player, a))
             {
                 //Turn red to indicate a collision (TEST CODE DUH)
                 player.GetComponent<SpriteRenderer>().color = Color.red;
                 a.GetComponent<SpriteRenderer>().color = Color.red;
                 playerColliding = true;
+            }
+
+            //Check Asteroid/Asteroid Collisions
+            foreach (GameObject b in asteroids)
+            {
+                if (a == b) continue;
+                if (collisions.CheckSpriteCollision(a, b))
+                {
+                    a.GetComponent<SpriteRenderer>().color = Color.green;
+                    a.GetComponent<Asteroid>().IsColliding = true;
+
+                    b.GetComponent<SpriteRenderer>().color = Color.green;
+                    a.GetComponent<Asteroid>().IsColliding = true;
+                }
             }
         }
 
@@ -41,10 +57,6 @@ public class CollisionManager : MonoBehaviour
         if (!playerColliding)
         {
             player.GetComponent<SpriteRenderer>().color = Color.white;
-            foreach (GameObject a in asteroids)
-            {
-                a.GetComponent<SpriteRenderer>().color = Color.white;
-            }
         }
     }
 }
