@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8B095D4D-4B03-428F-B2F8-F65EB4830D4B}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="SFX" ID="{8B095D4D-4B03-428F-B2F8-F65EB4830D4B}" PersistMode="Standalone">
+			<ChildrenList>
+				<PropertyContainer Name="SFX" ID="{CCC6260E-3FB7-4306-984C-10452FF8A38A}" ShortID="193863753">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{EC5C97A4-EA4A-4B8B-A270-D8C6B5744195}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="Asteroids" ID="{8DF00C62-C1F5-4A2E-8D3A-E068C056A51D}" ShortID="279891022">
+							<ChildrenList>
+								<Sound Name="Asteroid Ambient" ID="{62CFBBAD-E8F5-49FC-8ECB-752588159412}" ShortID="73429707">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ambience_asteroid_ambient_loop" ID="{E4D24307-F969-432F-A959-50417B6AD89F}">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="6.09644899281452"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_ambience_asteroid_ambient_loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="238464404"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ambience_asteroid_ambient_loop" ID="{E4D24307-F969-432F-A959-50417B6AD89F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</PropertyContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>
