@@ -12605,6 +12605,9 @@
 				<PhysicalFolder Path="Containers\Music">
 					<WorkUnit Name="Music" ID="{6F91A4A7-833A-4B50-93B8-9D98EFC49608}" PersistMode="Standalone"/>
 				</PhysicalFolder>
+				<PhysicalFolder Path="Containers\SFX">
+					<WorkUnit Name="SFX" ID="{7F257652-738C-469C-9883-03F504403319}" PersistMode="Standalone"/>
+				</PhysicalFolder>
 				<PhysicalFolder Path="Control Surface Sessions">
 					<WorkUnit Name="Control Surface Sessions" ID="{1751E4CD-8018-4E2C-9A8A-C77764D1D653}" PersistMode="Standalone"/>
 				</PhysicalFolder>
