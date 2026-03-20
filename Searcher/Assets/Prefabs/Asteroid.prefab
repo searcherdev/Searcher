@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 209442312582765912}
   - component: {fileID: 4277007241627424820}
   - component: {fileID: -5768483358911988793}
-  - component: {fileID: 3907045913590478402}
+  - component: {fileID: -4196773477966572687}
+  - component: {fileID: 472861149046128445}
   m_Layer: 0
   m_Name: Asteroid
   m_TagString: Untagged
@@ -105,8 +106,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cae3c405e1254e845b466a00c3459570, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Asteroid
---- !u!61 &3907045913590478402
-BoxCollider2D:
+--- !u!60 &-4196773477966572687
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -149,5 +150,48 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 6.24, y: 7.36}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.5549998, y: -1.68}
+      - {x: 2.7949998, y: 0.19}
+      - {x: 1.935, y: 0.74}
+      - {x: 2.435, y: 0.96999997}
+      - {x: 0.59499997, y: 1.36}
+      - {x: 2.965, y: 2.07}
+      - {x: -0.895, y: 3.6599998}
+      - {x: -0.655, y: 2.5}
+      - {x: -2.325, y: 2.78}
+      - {x: -2.965, y: 1.41}
+      - {x: -2.725, y: -1.03}
+      - {x: -2.355, y: -0.75}
+      - {x: -2.835, y: -3.1499999}
+      - {x: 0.175, y: -3.6399999}
+      - {x: 2.935, y: -1.77}
+  m_UseDelaunayMesh: 1
+--- !u!50 &472861149046128445
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571556090868230510}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

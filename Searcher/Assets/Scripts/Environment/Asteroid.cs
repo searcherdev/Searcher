@@ -52,4 +52,11 @@ public class Asteroid : MonoBehaviour
         position.y += velocity.y * Time.deltaTime;
         transform.position = position;
     }
+
+    //==== COLLIDING ====
+    /*private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+
+    }*/
 }

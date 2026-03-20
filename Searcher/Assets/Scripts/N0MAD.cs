@@ -45,7 +45,7 @@ public class N0MAD : MonoBehaviour
     }
 
     //==== METHODS ====
-    void Consciousness()
+    void Consciousness() //Constant Energy drain representing N0M-AD's brain at work
     {
         energy -= 1;
         Debug.Log(energy);
