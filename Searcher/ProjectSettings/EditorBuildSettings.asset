@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title Screen.unity
     guid: e4067f3aafbec9841ae16313db0dbbe1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/N0M-AD Workshop.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Testing Workshop.unity
+    guid: b725a20b65f31e2438d409ed92c5d31b
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

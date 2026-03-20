@@ -11,6 +11,8 @@ public class Asteroid : MonoBehaviour
     private Vector3 direction = Vector3.zero;
     private Vector3 velocity = Vector3.zero;
 
+    private Rigidbody2D rigidBody;
+
     private bool isColliding;
 
     //==== PROPERTIES ====
@@ -36,27 +38,23 @@ public class Asteroid : MonoBehaviour
         //Set initial scale
         transform.localScale = new Vector3(scale, scale, 1);
 
+        //Set RigidBody
+        rigidBody = GetComponent<Rigidbody2D>();
+
         //Set initial velocity
         position = transform.position;
-        velocity = new Vector3(Random.Range(-.1f, .1f) * (1/scale), Random.Range(-.1f, .1f) * (1/scale), 0);
+        rigidBody.linearVelocity = new Vector3(Random.Range(-.1f, .1f) * (1/scale), Random.Range(-.1f, .1f) * (1/scale), 0);
     }
 
     //==== UPDATE ====
     void Update()
     {
         //Add rotation
-        transform.Rotate(new Vector3(0, 0, rotSpeed) * Time.deltaTime);
+        //transform.Rotate(new Vector3(0, 0, rotSpeed) * Time.deltaTime);
 
         //Change position by velocity
-        position.x += velocity.x * Time.deltaTime;
-        position.y += velocity.y * Time.deltaTime;
+        position.x += rigidBody.linearVelocity.x * Time.deltaTime;
+        position.y += rigidBody.linearVelocity.y * Time.deltaTime;
         transform.position = position;
     }
-
-    //==== COLLIDING ====
-    /*private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-
-    }*/
 }
