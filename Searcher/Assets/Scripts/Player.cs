@@ -24,6 +24,9 @@ public class Player : MonoBehaviour
     //N0M-AD
     private N0MAD n0mad;
 
+    //RigidBody2D
+    private Rigidbody2D rigidBody;
+
     //==== PROPERTIES ====
     //Vectors
     public Vector3 Position { get { return position; } }
@@ -54,45 +57,51 @@ public class Player : MonoBehaviour
         accel = n0mad.Engine.Accel;
         maxSpeed = n0mad.Engine.MaxSpeed;
         rotSpeed = n0mad.Engine.RotSpeed;
+
+        //Set RigidBody
+        rigidBody = GetComponent<Rigidbody2D>();
     }
 
     //==== UPDATE ====
     void Update()
     {
         //Arrow Key Movement
-        if (Keyboard.current.leftArrowKey.isPressed) { velocity.x -= (accel * Time.deltaTime); } //Left
-        if (Keyboard.current.rightArrowKey.isPressed) { velocity.x += (accel * Time.deltaTime); } //Right
-        if (Keyboard.current.downArrowKey.isPressed) { velocity.y -= (accel * Time.deltaTime); } //Down
-        if (Keyboard.current.upArrowKey.isPressed) { velocity.y += (accel * Time.deltaTime); } //Up
+        if (Keyboard.current.leftArrowKey.isPressed) { rigidBody.linearVelocityX -= (accel * Time.deltaTime); } //Left
+        if (Keyboard.current.rightArrowKey.isPressed) { rigidBody.linearVelocityX += (accel * Time.deltaTime); } //Right
+        if (Keyboard.current.downArrowKey.isPressed) { rigidBody.linearVelocityY -= (accel * Time.deltaTime); } //Down
+        if (Keyboard.current.upArrowKey.isPressed) { rigidBody.linearVelocityY += (accel * Time.deltaTime); } //Up
 
         //Clamp Movement Speed
-        if (velocity.x <= -maxSpeed) velocity.x = -maxSpeed;
-        if (velocity.x >= maxSpeed) velocity.x = maxSpeed;
-        if (velocity.y <= -maxSpeed) velocity.y = -maxSpeed;
-        if (velocity.y >= maxSpeed) velocity.y = maxSpeed;
+        if (rigidBody.linearVelocityX <= -maxSpeed) rigidBody.linearVelocityX = -maxSpeed; //Left
+        if (rigidBody.linearVelocityX >= maxSpeed) rigidBody.linearVelocityX = maxSpeed; //Right
+        if (rigidBody.linearVelocityY <= -maxSpeed) rigidBody.linearVelocityY = -maxSpeed; //Down
+        if (rigidBody.linearVelocityY >= maxSpeed) rigidBody.linearVelocityY = maxSpeed; //Up
 
         //Apply Universal Decel
-        float speed = velocity.magnitude;
+        float speed = rigidBody.linearVelocity.magnitude;
         speed = Mathf.MoveTowards(speed, 0f, decel * Time.deltaTime);
-        if (speed > 0f) velocity = velocity.normalized * speed;
-        else velocity = Vector3.zero;
+        if (speed > 0f) rigidBody.linearVelocity = rigidBody.linearVelocity.normalized * speed;
+        else rigidBody.linearVelocity = Vector3.zero;
 
         //Set Player Position
-        position.x += (velocity.x * Time.deltaTime);
-        position.y += (velocity.y * Time.deltaTime);
+        position.x += (rigidBody.linearVelocityX * Time.deltaTime);
+        position.y += (rigidBody.linearVelocityY * Time.deltaTime);
         transform.position = position;
 
         //Move Camera to Player Position
         cam.transform.position = new Vector3(position.x, position.y, -10f);
 
         //Rotate Sprite Towards Velocity Over Time If Moving
-        direction = velocity.normalized;
+        direction = rigidBody.linearVelocity.normalized;
         if (direction != Vector3.zero)
         {
             float targetAngle = (Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg) - 90f;
             Quaternion targetRotation = Quaternion.Euler(0f, 0f, targetAngle);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotSpeed * Time.deltaTime);
         }
+
+        //Decelerate angular velocity on the RigidBody
+        rigidBody.angularVelocity -= 5 * decel * Time.deltaTime;
     }
 
     //==== FUNCTIONS ====

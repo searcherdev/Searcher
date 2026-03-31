@@ -13,14 +13,11 @@ public class Asteroid : MonoBehaviour
 
     private Rigidbody2D rigidBody;
 
-    private bool isColliding;
-
     //==== PROPERTIES ====
     public float Scale { get { return scale; } }
-    public Vector3 Position { get { return position; } }
+    public Vector3 Position { get { return position; } set { position = value; } }
     public Vector3 Direction { get { return direction; } }
     public Vector3 Velocity { get { return velocity; } }
-    public bool IsColliding { get { return isColliding; } set { isColliding = value; } }
 
     //==== START ====
     void Start()
@@ -40,6 +37,7 @@ public class Asteroid : MonoBehaviour
 
         //Set RigidBody
         rigidBody = GetComponent<Rigidbody2D>();
+        rigidBody.mass = 1000 * scale;
 
         //Set initial velocity
         position = transform.position;

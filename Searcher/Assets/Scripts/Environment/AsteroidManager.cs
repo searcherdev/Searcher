@@ -32,15 +32,24 @@ public class AsteroidManager : MonoBehaviour
         camWidth = cam.orthographicSize * cam.aspect;
 
         //Spawn Asteroids
+        bool canSpawn = true; //Create canSpawn variable
         for (int i = 0; i < numAsteroids; i++)
         {
-            Vector3 astPos = new Vector3(Random.Range(min, max), Random.Range(min, max));
-            asteroids.Add(Instantiate(asteroid, astPos, Quaternion.identity, transform));
-        }
+            canSpawn = true; //Reset canSpawn bool at top of every loop
+            Vector3 astPos = new Vector3(Random.Range(min, max), Random.Range(min, max)); //Set potential position
 
-        foreach (GameObject a in asteroids)
-        {
-            //Modify positions based on collisions to make sure they don't overlap
+            foreach (GameObject a in asteroids) //Loop through each asteroid already spawned
+            {
+                float increment = a.GetComponent<SpriteRenderer>().sprite.bounds.size.x / 2; //Get increment from center needed to check collisions
+
+                //If the potential position is within an asteroid, mark canSpawn as false
+                if (astPos.x > a.transform.position.x - increment && astPos.x < a.transform.position.x + increment && astPos.y > a.transform.position.y - increment && astPos.y < a.transform.position.y + increment) 
+                {
+                    canSpawn = false;
+                }
+            }
+            if (canSpawn) { asteroids.Add(Instantiate(asteroid, astPos, Quaternion.identity, transform)); } //If an asteroid can spawn, spawn it & add to the asteroids list
+            else { i -= 1; } //If it can't, redo this asteroid spawn process
         }
     }
 
