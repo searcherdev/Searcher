@@ -7,6 +7,10 @@ public class N0MAD : MonoBehaviour
     //==== FIELDS ====
     private float energy;
     private float maxEnergy;
+
+    private float hull;
+    private float maxHull;
+
     private Engine engine;
 
     private float timer;
@@ -14,6 +18,8 @@ public class N0MAD : MonoBehaviour
     //==== PROPERTIES ====
     public float Energy { get { return energy; } set { energy = value; } }
     public float MaxEnergy { get { return maxEnergy; } set { maxEnergy = value; } }   
+    public float Hull { get { return hull; } set { hull = value; } }
+    public float MaxHull { get { return maxHull; } set { hull = value; } }
     public Engine Engine { get { return engine; } set { engine = value; } }
     
     //==== START ====
@@ -31,6 +37,10 @@ public class N0MAD : MonoBehaviour
         engine.Accel = 1f;
         engine.MaxSpeed = 5f;
         engine.RotSpeed = 50f;
+
+        //Set Hull
+        maxHull = 100;
+        hull = maxHull;
     }
 
     //==== UPDATE ====
@@ -48,6 +58,5 @@ public class N0MAD : MonoBehaviour
     void Consciousness() //Constant Energy drain representing N0M-AD's brain at work
     {
         energy -= 1;
-        Debug.Log(energy);
     }
 }

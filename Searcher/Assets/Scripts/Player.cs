@@ -102,6 +102,7 @@ public class Player : MonoBehaviour
 
         //Decelerate angular velocity on the RigidBody
         rigidBody.angularVelocity -= 5 * decel * Time.deltaTime;
+        if (rigidBody.angularVelocity <= 0) rigidBody.angularVelocity = 0;
     }
 
     //==== FUNCTIONS ====
