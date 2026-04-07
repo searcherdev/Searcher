@@ -65,11 +65,14 @@ public class Player : MonoBehaviour
     //==== UPDATE ====
     void Update()
     {
-        //Arrow Key Movement
-        if (Keyboard.current.leftArrowKey.isPressed) { rigidBody.linearVelocityX -= (accel * Time.deltaTime); } //Left
-        if (Keyboard.current.rightArrowKey.isPressed) { rigidBody.linearVelocityX += (accel * Time.deltaTime); } //Right
-        if (Keyboard.current.downArrowKey.isPressed) { rigidBody.linearVelocityY -= (accel * Time.deltaTime); } //Down
-        if (Keyboard.current.upArrowKey.isPressed) { rigidBody.linearVelocityY += (accel * Time.deltaTime); } //Up
+        //Set isInUse to false by default
+        n0mad.Engine.IsInUse = false;
+        
+        //Arrow Key Movement (Engine is In Use & using Energy if any of these keys are pressed)
+        if (Keyboard.current.leftArrowKey.isPressed) { rigidBody.linearVelocityX -= (accel * Time.deltaTime); n0mad.Engine.IsInUse = true; } //Left
+        if (Keyboard.current.rightArrowKey.isPressed) { rigidBody.linearVelocityX += (accel * Time.deltaTime); n0mad.Engine.IsInUse = true; } //Right
+        if (Keyboard.current.downArrowKey.isPressed) { rigidBody.linearVelocityY -= (accel * Time.deltaTime); n0mad.Engine.IsInUse = true; } //Down
+        if (Keyboard.current.upArrowKey.isPressed) { rigidBody.linearVelocityY += (accel * Time.deltaTime); n0mad.Engine.IsInUse = true; } //Up
 
         //Clamp Movement Speed
         if (rigidBody.linearVelocityX <= -maxSpeed) rigidBody.linearVelocityX = -maxSpeed; //Left
