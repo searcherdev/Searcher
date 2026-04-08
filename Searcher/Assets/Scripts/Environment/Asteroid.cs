@@ -11,14 +11,13 @@ public class Asteroid : MonoBehaviour
     private Vector3 direction = Vector3.zero;
     private Vector3 velocity = Vector3.zero;
 
-    private bool isColliding;
+    private Rigidbody2D rigidBody;
 
     //==== PROPERTIES ====
     public float Scale { get { return scale; } }
-    public Vector3 Position { get { return position; } }
+    public Vector3 Position { get { return position; } set { position = value; } }
     public Vector3 Direction { get { return direction; } }
     public Vector3 Velocity { get { return velocity; } }
-    public bool IsColliding { get { return isColliding; } set { isColliding = value; } }
 
     //==== START ====
     void Start()
@@ -36,27 +35,24 @@ public class Asteroid : MonoBehaviour
         //Set initial scale
         transform.localScale = new Vector3(scale, scale, 1);
 
+        //Set RigidBody
+        rigidBody = GetComponent<Rigidbody2D>();
+        rigidBody.mass = 1000 * scale;
+
         //Set initial velocity
         position = transform.position;
-        velocity = new Vector3(Random.Range(-.1f, .1f) * (1/scale), Random.Range(-.1f, .1f) * (1/scale), 0);
+        rigidBody.linearVelocity = new Vector3(Random.Range(-.1f, .1f) * (1/scale), Random.Range(-.1f, .1f) * (1/scale), 0);
     }
 
     //==== UPDATE ====
     void Update()
     {
         //Add rotation
-        transform.Rotate(new Vector3(0, 0, rotSpeed) * Time.deltaTime);
+        //transform.Rotate(new Vector3(0, 0, rotSpeed) * Time.deltaTime);
 
         //Change position by velocity
-        position.x += velocity.x * Time.deltaTime;
-        position.y += velocity.y * Time.deltaTime;
+        position.x += rigidBody.linearVelocity.x * Time.deltaTime;
+        position.y += rigidBody.linearVelocity.y * Time.deltaTime;
         transform.position = position;
     }
-
-    //==== COLLIDING ====
-    /*private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-
-    }*/
 }
