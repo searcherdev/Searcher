@@ -68,11 +68,29 @@ public class Player : MonoBehaviour
         //Set isInUse to false by default
         n0mad.Engine.IsInUse = false;
         
-        //Arrow Key Movement (Engine is In Use & using Energy if any of these keys are pressed)
-        if (Keyboard.current.leftArrowKey.isPressed) { rigidBody.linearVelocityX -= (accel * Time.deltaTime); n0mad.Engine.IsInUse = true; } //Left
-        if (Keyboard.current.rightArrowKey.isPressed) { rigidBody.linearVelocityX += (accel * Time.deltaTime); n0mad.Engine.IsInUse = true; } //Right
-        if (Keyboard.current.downArrowKey.isPressed) { rigidBody.linearVelocityY -= (accel * Time.deltaTime); n0mad.Engine.IsInUse = true; } //Down
-        if (Keyboard.current.upArrowKey.isPressed) { rigidBody.linearVelocityY += (accel * Time.deltaTime); n0mad.Engine.IsInUse = true; } //Up
+        //Arrow Key Movement (Engine is In Use & using Energy if any of these keys are pressed) (ADDING IN ANGULAR VELOCITY UPDATES HERE)
+        if (Keyboard.current.leftArrowKey.isPressed) { //Left
+            rigidBody.linearVelocityX -= (accel * Time.deltaTime);
+            n0mad.Engine.IsInUse = true;
+            Mathf.MoveTowards(rigidBody.angularVelocity, 0, Time.deltaTime);
+        }
+        if (Keyboard.current.rightArrowKey.isPressed) { //Right
+            rigidBody.linearVelocityX += (accel * Time.deltaTime);
+            n0mad.Engine.IsInUse = true;
+            Mathf.MoveTowards(rigidBody.angularVelocity, 0, Time.deltaTime);
+
+        }
+        if (Keyboard.current.downArrowKey.isPressed) { //Down
+            rigidBody.linearVelocityY -= (accel * Time.deltaTime);
+            n0mad.Engine.IsInUse = true;
+            Mathf.MoveTowards(rigidBody.angularVelocity, 0, Time.deltaTime);
+
+        }
+        if (Keyboard.current.upArrowKey.isPressed) { //Up
+            rigidBody.linearVelocityY += (accel * Time.deltaTime);
+            n0mad.Engine.IsInUse = true;
+            Mathf.MoveTowards(rigidBody.angularVelocity, 0, Time.deltaTime);
+        }
 
         //Clamp Movement Speed
         if (rigidBody.linearVelocityX <= -maxSpeed) rigidBody.linearVelocityX = -maxSpeed; //Left
@@ -102,10 +120,6 @@ public class Player : MonoBehaviour
             Quaternion targetRotation = Quaternion.Euler(0f, 0f, targetAngle);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotSpeed * Time.deltaTime);
         }
-
-        //Decelerate angular velocity on the RigidBody
-        rigidBody.angularVelocity -= 5 * decel * Time.deltaTime;
-        if (rigidBody.angularVelocity <= 0) rigidBody.angularVelocity = 0;
     }
 
     //==== FUNCTIONS ====

@@ -599,6 +599,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -133143258358954945, guid: da8bba11c5f8bb84093c15fdafd7d531, type: 3}
+      propertyPath: m_AngularDamping
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1068118392862056522, guid: da8bba11c5f8bb84093c15fdafd7d531, type: 3}
       propertyPath: m_Name
       value: N0M-AD
