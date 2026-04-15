@@ -666,6 +666,7 @@ GameObject:
   - component: {fileID: 309350834}
   - component: {fileID: 309350835}
   - component: {fileID: 309350836}
+  - component: {fileID: 309350837}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -756,6 +757,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Cursor
   cursorPrefab: {fileID: 1068118392862056522, guid: cb99cfcf6af1f134389c8b772a7df94b, type: 3}
   manager: {fileID: 309350830}
+--- !u!114 &309350837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309350830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10386dc7603cc56459ae794f2ecc0b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NebulaManager
+  nebula: {fileID: 8171956381654838759, guid: 4d7114a959aa18248b868c2c7de92e0b, type: 3}
 --- !u!1 &576866008
 GameObject:
   m_ObjectHideFlags: 0

@@ -37,7 +37,6 @@ public class Cursor : MonoBehaviour
             {
                 cursor.transform.position = Vector3.MoveTowards(cursor.transform.position, a.transform.position, 50f * Time.deltaTime);
                 mouseColliding = true;
-                Debug.Log(a.GetComponent<Asteroid>().Ore);
             }
         }
         if (!mouseColliding) //If the mouse isn't over an interactable, return cursor back to mousePos
