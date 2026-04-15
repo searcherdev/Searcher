@@ -665,6 +665,7 @@ GameObject:
   - component: {fileID: 309350833}
   - component: {fileID: 309350834}
   - component: {fileID: 309350835}
+  - component: {fileID: 309350836}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -741,6 +742,20 @@ MonoBehaviour:
   energyBarText: {fileID: 29411739}
   hullBar: {fileID: 216356457}
   hullBarText: {fileID: 1139020914}
+--- !u!114 &309350836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309350830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f25f378f209a47f499421024317973e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cursor
+  cursorPrefab: {fileID: 1068118392862056522, guid: cb99cfcf6af1f134389c8b772a7df94b, type: 3}
+  manager: {fileID: 309350830}
 --- !u!1 &576866008
 GameObject:
   m_ObjectHideFlags: 0
@@ -959,7 +974,7 @@ MonoBehaviour:
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
   m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: 0}
   m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}

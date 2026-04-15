@@ -13,11 +13,14 @@ public class Asteroid : MonoBehaviour
 
     private Rigidbody2D rigidBody;
 
+    private float ore;
+
     //==== PROPERTIES ====
     public float Scale { get { return scale; } }
     public Vector3 Position { get { return position; } set { position = value; } }
     public Vector3 Direction { get { return direction; } }
     public Vector3 Velocity { get { return velocity; } }
+    public float Ore { get { return ore; } set { ore = value; } }
 
     //==== START ====
     void Start()
@@ -42,6 +45,9 @@ public class Asteroid : MonoBehaviour
         //Set initial velocity
         position = transform.position;
         rigidBody.linearVelocity = new Vector3(Random.Range(-.1f, .1f) * (1/scale), Random.Range(-.1f, .1f) * (1/scale), 0);
+
+        //Set Ore Count
+        ore = Mathf.Round(Random.Range(1f, 5f) * (scale * 20));
     }
 
     //==== UPDATE ====
