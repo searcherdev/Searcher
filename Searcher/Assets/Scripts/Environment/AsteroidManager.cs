@@ -38,6 +38,15 @@ public class AsteroidManager : MonoBehaviour
             canSpawn = true; //Reset canSpawn bool at top of every loop
             Vector3 astPos = new Vector3(Random.Range(min, max), Random.Range(min, max)); //Set potential position
 
+            //Determine if asteroid is spawning over N0M-AD
+            GameObject n0mad = GameObject.FindGameObjectWithTag("Player");
+            float n0madIncrementX = n0mad.GetComponent<SpriteRenderer>().sprite.bounds.size.x;
+            float n0madIncrementY = n0mad.GetComponent<SpriteRenderer>().sprite.bounds.size.y;
+            if (astPos.x > n0mad.transform.position.x - n0madIncrementX && astPos.x < n0mad.transform.position.x + n0madIncrementX && astPos.y > n0mad.transform.position.y - n0madIncrementY && astPos.y < n0mad.transform.position.y + n0madIncrementY)
+            {
+                canSpawn = false;
+            }
+
             foreach (GameObject a in asteroids) //Loop through each asteroid already spawned
             {
                 float increment = a.GetComponent<SpriteRenderer>().sprite.bounds.size.x / 2; //Get increment from center needed to check collisions
