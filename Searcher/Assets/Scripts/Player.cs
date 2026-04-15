@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     //Vectors
     public Vector3 Position { get { return position; } }
     public Vector3 Direction { get { return direction; } }
-    public Vector3 Velocity { get { return velocity; } }
+    public Vector3 Velocity { get { return rigidBody.linearVelocity; } set { rigidBody.linearVelocity = value; } }
 
     //Values
     public float Acceleration { get { return accel; } }

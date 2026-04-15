@@ -3,7 +3,6 @@ using UnityEngine;
 public class Asteroid : MonoBehaviour
 {
     //==== FIELDS ====
-    private float rotSpeed;
     private float zRot;
     private float scale;
 
@@ -14,6 +13,7 @@ public class Asteroid : MonoBehaviour
     private Rigidbody2D rigidBody;
 
     private float ore;
+    private float gas;
 
     //==== PROPERTIES ====
     public float Scale { get { return scale; } }
@@ -21,19 +21,17 @@ public class Asteroid : MonoBehaviour
     public Vector3 Direction { get { return direction; } }
     public Vector3 Velocity { get { return velocity; } }
     public float Ore { get { return ore; } set { ore = value; } }
+    public float Gas { get { return gas; } set { gas = value; } }
 
     //==== START ====
     void Start()
     {
         //Set random starting rotation & rotation speed
-        rotSpeed = Random.Range(-10, 10);
         zRot = Random.Range(-360, 360);
         scale = Random.Range(0.1f, 0.5f);
 
         //Set initial rotation
-        Quaternion tempRot = transform.rotation;
-        tempRot.z = zRot;
-        transform.rotation = tempRot;
+        transform.rotation = Quaternion.Euler(0, 0, zRot);
 
         //Set initial scale
         transform.localScale = new Vector3(scale, scale, 1);
@@ -46,16 +44,14 @@ public class Asteroid : MonoBehaviour
         position = transform.position;
         rigidBody.linearVelocity = new Vector3(Random.Range(-.1f, .1f) * (1/scale), Random.Range(-.1f, .1f) * (1/scale), 0);
 
-        //Set Ore Count
+        //Set Ore & Gas Count
         ore = Mathf.Round(Random.Range(1f, 5f) * (scale * 20));
+        gas = Mathf.Round(Random.Range(0f, 3f) * (scale * 5));
     }
 
     //==== UPDATE ====
     void Update()
     {
-        //Add rotation
-        //transform.Rotate(new Vector3(0, 0, rotSpeed) * Time.deltaTime);
-
         //Change position by velocity
         position.x += rigidBody.linearVelocity.x * Time.deltaTime;
         position.y += rigidBody.linearVelocity.y * Time.deltaTime;

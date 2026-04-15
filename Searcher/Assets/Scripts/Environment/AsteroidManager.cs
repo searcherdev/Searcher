@@ -65,14 +65,6 @@ public class AsteroidManager : MonoBehaviour
     //==== UPDATE ====
     void Update()
     {
-        /*foreach (GameObject a in asteroids)
-        {
-            //Get position of star relative to camera
-            Vector3 astInViewport = cam.WorldToViewportPoint(a.transform.position);
-
-            //If a star is inside the camera, set it to active
-            if (astInViewport.x >= 0 && astInViewport.x <= 1 && astInViewport.y >= 0 && astInViewport.y <= 1) a.SetActive(true);
-            else a.SetActive(false); //Else set it to inactive
-        }*/
+        
     }
 }
