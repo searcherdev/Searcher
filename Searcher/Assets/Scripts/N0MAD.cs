@@ -16,11 +16,13 @@ public class N0MAD : MonoBehaviour
     private float hullResist;
 
     private Engine engine;
+    private Cargo cargo;
+    private Harvester harvester;
 
     private float timer;
 
-    private Dictionary<string, int> cargo = new Dictionary<string, int>(); //Key = name, Value = number (of item)
-    private float maxCargo;
+    private GameObject target;
+    private GameObject manager;
 
     //==== PROPERTIES ====
     public float Energy { get { return energy; } set { energy = value; } }
@@ -29,14 +31,18 @@ public class N0MAD : MonoBehaviour
     public float MaxHull { get { return maxHull; } set { hull = value; } }
     public float HullResist { get { return hullResist; } set { hullResist = value; } }
     public Engine Engine { get { return engine; } set { engine = value; } }
-    public Dictionary<string, int> Cargo { get { return cargo; } set { cargo = value; } }
-    public float MaxCargo { get {return maxCargo; } set {maxCargo = value; } }
+    public Cargo Cargo { get { return cargo; } set { cargo = value; } }
+    public Harvester Harvester { get { return harvester; } set { harvester = value; } }
+    public GameObject Target { get { return target; } set { target = value; } }
     
     //==== START ====
     void Start()
     {
         //Set timer to 0
         timer = 0f;
+
+        //Set Manager
+        manager = GameObject.FindGameObjectWithTag("Manager");
 
         //Set Energy & MaxEnergy
         maxEnergy = 10000;
@@ -54,13 +60,19 @@ public class N0MAD : MonoBehaviour
         hullResist = 0.01f;
 
         //Set Cargo
-        maxCargo = 20;
-        BaseCargoValues();
+        cargo.Hold = new Dictionary<string, int>(); //Key = name, Value = number (of item)
+        cargo.MaxCargo = 20;
+        cargo.BaseCargoValues();
+
+        //Set Harvester
+        harvester.Rate = 5f; //5 seconds per item harvested from target
     }
 
     //==== UPDATE ====
     void Update()
     {
+        target = manager.GetComponent<Cursor>().Target;
+        
         //Consciousness Update Timer
         timer += Time.deltaTime;
         if (timer >= 1.0f) //If a second passes, activate consciousness energy decrease and decrement timer
@@ -77,17 +89,6 @@ public class N0MAD : MonoBehaviour
     void Consciousness() //Constant Energy drain representing N0M-AD's brain at work
     {
         energy -= 1;
-    }
-    void BaseCargoValues()
-    {
-        cargo.Add("Ore", 0);
-        cargo.Add("Gas", 0);
-        cargo.Add("Metals", 0);
-        cargo.Add("Fuel", 0);
-        cargo.Add("Circuits", 0);
-        cargo.Add("Heavy Metals", 0);
-        cargo.Add("Jump Fuel", 0);
-        cargo.Add("Computer Circuits", 0);
     }
 
     //When N0M-AD collides with an outside collider for the first time

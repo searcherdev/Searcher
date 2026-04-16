@@ -662,14 +662,14 @@ GameObject:
   m_Component:
   - component: {fileID: 309350832}
   - component: {fileID: 309350831}
+  - component: {fileID: 309350837}
   - component: {fileID: 309350833}
   - component: {fileID: 309350834}
   - component: {fileID: 309350835}
   - component: {fileID: 309350836}
-  - component: {fileID: 309350837}
   m_Layer: 0
   m_Name: Manager
-  m_TagString: Untagged
+  m_TagString: Manager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

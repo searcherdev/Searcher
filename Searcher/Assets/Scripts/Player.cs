@@ -69,24 +69,24 @@ public class Player : MonoBehaviour
         n0mad.Engine.IsInUse = false;
         
         //Arrow Key Movement (Engine is In Use & using Energy if any of these keys are pressed) (ADDING IN ANGULAR VELOCITY UPDATES HERE)
-        if (Keyboard.current.leftArrowKey.isPressed) { //Left
+        if (Keyboard.current.leftArrowKey.isPressed || Keyboard.current.aKey.isPressed) { //Left (Left Arrow or A)
             rigidBody.linearVelocityX -= (accel * Time.deltaTime);
             n0mad.Engine.IsInUse = true;
             Mathf.MoveTowards(rigidBody.angularVelocity, 0, Time.deltaTime);
         }
-        if (Keyboard.current.rightArrowKey.isPressed) { //Right
+        if (Keyboard.current.rightArrowKey.isPressed || Keyboard.current.dKey.isPressed) { //Right (Right Arrow or D)
             rigidBody.linearVelocityX += (accel * Time.deltaTime);
             n0mad.Engine.IsInUse = true;
             Mathf.MoveTowards(rigidBody.angularVelocity, 0, Time.deltaTime);
 
         }
-        if (Keyboard.current.downArrowKey.isPressed) { //Down
+        if (Keyboard.current.downArrowKey.isPressed || Keyboard.current.sKey.isPressed) { //Down (Down Arrow or S)
             rigidBody.linearVelocityY -= (accel * Time.deltaTime);
             n0mad.Engine.IsInUse = true;
             Mathf.MoveTowards(rigidBody.angularVelocity, 0, Time.deltaTime);
 
         }
-        if (Keyboard.current.upArrowKey.isPressed) { //Up
+        if (Keyboard.current.upArrowKey.isPressed || Keyboard.current.wKey.isPressed) { //Up (Up Arrow or W)
             rigidBody.linearVelocityY += (accel * Time.deltaTime);
             n0mad.Engine.IsInUse = true;
             Mathf.MoveTowards(rigidBody.angularVelocity, 0, Time.deltaTime);
