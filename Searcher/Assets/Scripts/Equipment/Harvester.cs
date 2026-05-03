@@ -41,10 +41,11 @@ public class Harvester : MonoBehaviour
     {
         if (active && target != null)
         {
+            //If the Harvester should be Harvesting, then Harvest
             if ((target.GetComponent<Asteroid>() && Vector3.Distance(this.transform.position, target.transform.position) <= range) || (target.GetComponent<Nebula>() && collisions.CheckSpriteCollision(n0mad.gameObject, target)))
             {
                 Debug.Log("HARVESTING");
-                HarvesterBeam();
+                HarvesterBeam(); //Render UI Harvester Beam
 
                 //Harvester Update Timer
                 timer += Time.deltaTime;
@@ -53,9 +54,10 @@ public class Harvester : MonoBehaviour
                     Harvest();
                     timer -= rate;
                 }
-                n0mad.Energy -= (1 / rate) * 10 * Time.deltaTime;
+
+                n0mad.Energy -= (1 / rate) * 10 * Time.deltaTime; //Decrement energy based on usage
             }
-            else
+            else //Otherwise, turn off the Harvester
             {
                 SetInactive();
                 Debug.Log("OFF - Out of Range");
@@ -74,13 +76,15 @@ public class Harvester : MonoBehaviour
                 if (randNum == 1 && a.Gas > 0) //Take a Gas if there's a Gas to take and that's what was rolled
                 {
                     a.Gas--;
-                    n0mad.Cargo.Hold["Gas"]++;
+                    if (n0mad.Cargo.Hold.ContainsKey("Gas")) { n0mad.Cargo.Hold["Gas"]++; }
+                    else { n0mad.Cargo.Hold.Add("Gas", 1); }
                     Debug.Log("Took 1 Gas from Asteroid. N0M-AD Gas: " + n0mad.Cargo.Hold["Gas"] + ". Asteroid Gas: " + a.Gas);
                 }
                 else //Take an Ore otherwise
                 {
                     a.Ore--;
-                    n0mad.Cargo.Hold["Ore"]++;
+                    if (n0mad.Cargo.Hold.ContainsKey("Ore")) { n0mad.Cargo.Hold["Ore"]++; }
+                    else { n0mad.Cargo.Hold.Add("Ore", 1); }
                     Debug.Log("Took 1 Ore from Asteroid. N0M-AD Ore: " + n0mad.Cargo.Hold["Ore"] + ". Asteroid Ore: " + a.Ore);
                 }
                 if (a.Ore == 0 && a.Gas == 0) { SetInactive(); manager.GetComponent<AsteroidManager>().Asteroids.Remove(a.gameObject); Destroy(a.gameObject); }
@@ -88,7 +92,8 @@ public class Harvester : MonoBehaviour
 
             case Nebula n: //Take Gas from a Nebula
                 n.Gas--;
-                n0mad.Cargo.Hold["Gas"]++;
+                if (n0mad.Cargo.Hold.ContainsKey("Gas")) { n0mad.Cargo.Hold["Gas"]++; }
+                else { n0mad.Cargo.Hold.Add("Gas", 1); }
                 Debug.Log("Took 1 Gas from Nebula. N0M-AD Gas: " + n0mad.Cargo.Hold["Gas"] + ". Nebula Gas: " + n.Gas);
                 if (n.Gas == 0) { SetInactive(); manager.GetComponent<NebulaManager>().Nebulae.Remove(n.gameObject); Destroy(n.gameObject); }
                 break;

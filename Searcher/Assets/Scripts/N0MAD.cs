@@ -89,7 +89,6 @@ public class N0MAD : MonoBehaviour
         cargo = gameObject.AddComponent<Cargo>();
         cargo.Hold = new Dictionary<string, int>(); //Key = name, Value = number (of item)
         cargo.MaxCargo = 20;
-        cargo.BaseCargoValues();
 
         //Set Harvester
         harvester = gameObject.AddComponent<Harvester>();
