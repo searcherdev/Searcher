@@ -13,6 +13,11 @@ public class Cursor : MonoBehaviour
     private Collisions collisions;
     [SerializeField] GameObject manager;
 
+    private GameObject target;
+
+    //==== PROPERTIES ====
+    public GameObject Target { get { return target; } set { target = value; } }
+
     //==== START ====
     void Start()
     {
@@ -25,6 +30,8 @@ public class Cursor : MonoBehaviour
     //==== UPDATE ====
     void Update()
     {
+        target = null;
+        
         //Get Mouse Position & Update Cursor Transform
         mousePos = Mouse.current.position.ReadValue();
         mousePos = Camera.main.ScreenToWorldPoint(mousePos);
@@ -37,11 +44,19 @@ public class Cursor : MonoBehaviour
             {
                 cursor.transform.position = Vector3.MoveTowards(cursor.transform.position, a.transform.position, 50f * Time.deltaTime);
                 mouseColliding = true;
+                target = a;
             }
         }
-        if (!mouseColliding) //If the mouse isn't over an interactable, return cursor back to mousePos
+        if (!mouseColliding) //If the mouse isn't over an interactable that requires magnetism, return cursor back to mousePos
         {
             cursor.transform.position = Vector3.MoveTowards(cursor.transform.position, mousePos, 50f * Time.deltaTime);
+            foreach (GameObject n in manager.GetComponent<NebulaManager>().Nebulae) //Now that we know for sure the cursor isn't over an Asteroid, check if we're over a Nebula
+            {
+                if (collisions.CheckMouseOverlap(mousePos, n))
+                {
+                    target = n;
+                }
+            }
         }
     }
 }

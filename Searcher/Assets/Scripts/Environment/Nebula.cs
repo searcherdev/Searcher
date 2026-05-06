@@ -47,6 +47,11 @@ public class Nebula : MonoBehaviour
 
         //Set Collisions
         collisions = new Collisions();
+
+        //Set Nebula Transparency Based On Density
+        Color nColor = this.GetComponent<SpriteRenderer>().color;
+        nColor.a = density / 2;
+        this.GetComponent<SpriteRenderer>().color = nColor;
     }
 
     //==== UPDATE ====
@@ -57,7 +62,7 @@ public class Nebula : MonoBehaviour
         position.y += velocity.y * Time.deltaTime;
         transform.position = position;
 
-        //Affect N0M-AD Velocity (and eventually other object velocities BUT ONE THING AT A TIME)
+        //Affect N0M-AD Velocity
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (collisions.CheckSpriteCollision(this.gameObject, player))
         {
@@ -66,5 +71,15 @@ public class Nebula : MonoBehaviour
             player.GetComponent<Player>().Velocity = playerVelocity;
         }
 
+        //Affect Asteroid Velocity
+        foreach (GameObject a in FindFirstObjectByType<AsteroidManager>().Asteroids)
+        {
+            if (collisions.CheckSpriteCollision(this.gameObject, a))
+            {
+                Vector3 aVelocity = a.GetComponent<Asteroid>().Velocity;
+                Vector3.MoveTowards(aVelocity, Vector3.zero, (density / 2) * Time.deltaTime); //Slow down Asteroids half as quickly as they slow down N0M-AD
+                a.GetComponent<Asteroid>().Velocity = aVelocity;
+            }
+        }
     }
 }

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: c7c08229be558674a8db11d26a9b15db
+guid: ea39e0f15549f61439e10e9f33960367
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 296978103301713925
-    second: s_Nebula_0
+      213: 2960617462384567580
+    second: s_Ore_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,23 +100,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: s_Nebula_0
+      name: s_Ore_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 168
-        height: 168
+        x: 21
+        y: 24
+        width: 162
+        height: 164
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5003e51f2041f1400800000000000000
-      internalID: 296978103301713925
+      spriteID: c15204165e9361920800000000000000
+      internalID: 2960617462384567580
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a3bad3b8238c9e242bcbfa9af1f3c1da
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      s_Nebula_0: 296978103301713925
+      s_Ore_0: 2960617462384567580
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

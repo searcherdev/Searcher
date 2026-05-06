@@ -19,7 +19,7 @@ public class Asteroid : MonoBehaviour
     public float Scale { get { return scale; } }
     public Vector3 Position { get { return position; } set { position = value; } }
     public Vector3 Direction { get { return direction; } }
-    public Vector3 Velocity { get { return velocity; } }
+    public Vector3 Velocity { get { return velocity; } set { velocity = value; } }
     public float Ore { get { return ore; } set { ore = value; } }
     public float Gas { get { return gas; } set { gas = value; } }
 
