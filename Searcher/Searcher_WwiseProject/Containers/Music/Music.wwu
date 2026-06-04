@@ -32,7 +32,6 @@
 							<PropertyList>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
-								<Property Name="Tempo" Type="Real64" Value="70"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -43,7 +42,141 @@
 								</Reference>
 								<Reference Name="PlaylistRoot">
 									<Custom>
-										<MusicPlaylistItem Name="" ID="{B3897427-F666-457A-B7D0-7CAD9CDE4E5C}" ShortID="654778048"/>
+										<MusicPlaylistItem Name="" ID="{B3897427-F666-457A-B7D0-7CAD9CDE4E5C}" ShortID="654778048">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlayMode" Type="int16" Value="2"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{750FF9B8-ADCD-49A0-B5AB-1BED44AD7697}" ShortID="649835965">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="2">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{6C88BB99-31C3-4279-AB95-81B76DB59B48}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{6B28C148-04B3-4544-AEFC-8A30CFD18CF5}" ShortID="697261783">
+															<PropertyList>
+																<Property Name="LoopCount" Type="int16">
+																	<ModifierList>
+																		<ModifierInfo>
+																			<Modifier Name="" ID="{A7F6A804-9D89-448C-926D-E803094135B5}">
+																				<PropertyList>
+																					<Property Name="Max" Type="Real64" Value="16554"/>
+																				</PropertyList>
+																			</Modifier>
+																		</ModifierInfo>
+																	</ModifierList>
+																</Property>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="Four Bar Tension" ID="{47F14CE7-6381-43A8-8F26-F2DF303DB7A3}" WorkUnitID="{FC4E9EB9-04FD-4B11-AD33-72AD808888B7}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{7FBE8BFA-BD87-4C09-8BCD-4A6F9710572A}" ShortID="650493353">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="2">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{7DACE67F-AF4A-4F4D-A5B1-DCBBF491A232}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{31CED8A3-4BC0-4000-A183-00B53A32E496}" ShortID="274931986">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="One Bar Tension" ID="{96DCA50C-44C5-48A8-8755-9A66DA8AD91B}" WorkUnitID="{FC4E9EB9-04FD-4B11-AD33-72AD808888B7}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{F8AE42EF-70E0-4808-8F8D-EB5F1415C826}" ShortID="565086731">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="2">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{8957E010-7333-4F5C-A66E-25727B0B69C9}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{A36DEF46-C323-4F88-949E-7DCF6E25679B}" ShortID="902621515">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="Three Bar Tension" ID="{06CD19C7-3414-4E85-9A9B-8301B174F62B}" WorkUnitID="{FC4E9EB9-04FD-4B11-AD33-72AD808888B7}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{E4B5E14B-72FB-4565-9286-11FDA4599B53}" ShortID="338063781">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="2">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{444A5D27-358F-4F7E-8D88-A4AD5CF2F79F}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																			<Property Name="Min" Type="Real64" Value="-1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ChildrenList>
+														<MusicPlaylistItem Name="" ID="{CCC00710-123A-42DC-B2DE-DA2FA337490D}" ShortID="861187044">
+															<PropertyList>
+																<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+															</PropertyList>
+															<ReferenceList>
+																<Reference Name="Segment">
+																	<ObjectRef Name="Two Bar Tension" ID="{CC5752EC-F075-4C6E-B11C-E53780D1DD41}" WorkUnitID="{FC4E9EB9-04FD-4B11-AD33-72AD808888B7}"/>
+																</Reference>
+															</ReferenceList>
+														</MusicPlaylistItem>
+													</ChildrenList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
 									</Custom>
 								</Reference>
 								<Reference Name="TransitionRoot">
@@ -64,6 +197,9 @@
 							</ReferenceList>
 							<ChildrenList>
 								<MusicSegment Name="One Bar Tension" ID="{96DCA50C-44C5-48A8-8755-9A66DA8AD91B}" ShortID="278266922">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="13408.4353741497"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
@@ -72,19 +208,328 @@
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Blue" ID="{BA0E9DF0-1000-47E8-977F-F976255FFAA9}" ShortID="204617644">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{FD277C4D-65F5-4F75-82A2-A084E467B091}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="mx_ambience_pad_Blue_F#A_1bar_120bpm" ID="{559880AF-833F-4830-A337-A22BD85840F5}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_F#A_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="382485359"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_F#G#_1bar_120bpm" ID="{EB732B95-15DE-43BB-B49E-777C261B2150}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_F#G#_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="395690936"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_F#G_1bar_120bpm" ID="{5A095E2C-B6BA-43E8-A094-4B21AD7D44AF}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_F#G_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="740289943"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_G#A_1bar_120bpm" ID="{B54E464B-79BC-4024-9AF2-957F8B613883}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_G#A_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="238751890"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_GA_1bar_120bpm" ID="{A05F215D-D04D-4367-B70F-3CC7442A88C1}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_GA_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="147241920"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_GG#_1bar_120bpm" ID="{4783AB43-600D-42B6-A725-1C493AF3A1C1}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_GG#_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="621135786"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{0A48BF32-E4C0-466A-BFEA-E6D3EB67530F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_F#A_1bar_120bpm" ID="{639A05E2-2F95-4920-B20C-8C6CDB46482F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#A_1bar_120bpm" ID="{559880AF-833F-4830-A337-A22BD85840F5}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{649671C5-B01B-4FF4-BD83-EBB27B0770CD}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_F#G#_1bar_120bpm" ID="{A2DB132B-617D-4C5E-ABF0-719243231D9A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G#_1bar_120bpm" ID="{EB732B95-15DE-43BB-B49E-777C261B2150}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{2AB61735-8AE4-43E4-AC12-AC3B95358526}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_F#G_1bar_120bpm" ID="{81512980-125E-4C8A-9088-2FA40B92D3C6}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G_1bar_120bpm" ID="{5A095E2C-B6BA-43E8-A094-4B21AD7D44AF}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{3B18559E-68F5-4095-AA25-D55BE358D929}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_G#A_1bar_120bpm" ID="{1BEAEB1B-59FB-41F6-B679-464310DCFF9D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_G#A_1bar_120bpm" ID="{B54E464B-79BC-4024-9AF2-957F8B613883}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{C7C741AF-A6AE-4205-9E38-B65FC79F8ED8}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_GA_1bar_120bpm" ID="{A39B58E7-51EB-44CD-94F1-B091B06BB9E2}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_GA_1bar_120bpm" ID="{A05F215D-D04D-4367-B70F-3CC7442A88C1}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{A98A4C5F-4164-4B13-A25E-8459D92B01D0}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_GG#_1bar_120bpm" ID="{83D7C4F7-A09C-41EB-8A22-3DFCFDF92FB1}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_GG#_1bar_120bpm" ID="{4783AB43-600D-42B6-A725-1C493AF3A1C1}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Red" ID="{6C368B47-6F8F-4264-A3F0-17158A17C260}" ShortID="66966639">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{0BE60E9D-7648-4742-9B3E-147BB5E9ECA4}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="mx_ambience_pad_Red_C#D#_1bar_120bpm" ID="{835E0A50-ACC3-4273-9ACA-D417ABB5C369}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_C#D#_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="545923439"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_C#D_1bar_120bpm" ID="{A9F415DA-2E4F-427B-8133-19600C17EF32}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_C#D_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="345951274"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CC#_1bar_120bpm" ID="{C9C808F3-387F-4022-83C1-469C4C0C25A9}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CC#_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="843444672"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CD#_1bar_120bpm" ID="{2A904ED7-3799-4892-8828-30488526C8AE}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CD#_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="979247662"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CD_1bar_120bpm" ID="{262995C0-1F69-4125-B9F6-64F90A8D8A80}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CD_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="445436935"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_DD#_1bar_120bpm" ID="{4668879F-9CB4-407B-A196-9EB9EBF6F45B}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_DD#_1bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="904336629"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{4057B007-B5BE-4DED-8777-F683856E0BA8}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_C#D#_1bar_120bpm" ID="{4C1E6638-71D4-4EEF-ACF5-4388CA6F4AF2}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D#_1bar_120bpm" ID="{835E0A50-ACC3-4273-9ACA-D417ABB5C369}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{C01E1F33-0C2F-493F-AF21-D2800DA5A4CD}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_C#D_1bar_120bpm" ID="{59DB3D0C-20D9-4C1E-9D7F-3F05FA7FA692}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D_1bar_120bpm" ID="{A9F415DA-2E4F-427B-8133-19600C17EF32}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{08A01BE7-AE3D-4F9B-A64E-C258439AFD04}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CC#_1bar_120bpm" ID="{D7B34CC1-E804-4133-A793-663B9220A16C}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CC#_1bar_120bpm" ID="{C9C808F3-387F-4022-83C1-469C4C0C25A9}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{CCB8C2A7-FC86-42C4-BEE1-0C56B8101E29}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CD#_1bar_120bpm" ID="{7170A62A-7571-4633-8BF6-28512D8B5ED1}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CD#_1bar_120bpm" ID="{2A904ED7-3799-4892-8828-30488526C8AE}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{983FF2FF-494D-4B2B-A7C8-AE823E5D21B7}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CD_1bar_120bpm" ID="{51B46634-D79C-48D2-8BD3-3D0287697767}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CD_1bar_120bpm" ID="{262995C0-1F69-4125-B9F6-64F90A8D8A80}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{A0EA36C5-E2F6-4365-910F-31281E0F8C60}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_DD#_1bar_120bpm" ID="{BBE46C2A-6229-409A-937A-CBDE8B98FFD6}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_DD#_1bar_120bpm" ID="{4668879F-9CB4-407B-A196-9EB9EBF6F45B}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Cues">
 											<MusicCue Name="Entry Cue" ID="{86CFEA59-52D0-494A-81B3-BC1C86B0E88D}"/>
 											<MusicCue Name="Exit Cue" ID="{1B3F74BA-74B4-4BEF-BCF8-C372D14BFB50}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="1000"/>
+													<Property Name="TimeMs" Type="Real64" Value="2000"/>
 												</PropertyList>
 											</MusicCue>
 										</ObjectList>
 									</ObjectLists>
 								</MusicSegment>
 								<MusicSegment Name="Two Bar Tension" ID="{CC5752EC-F075-4C6E-B11C-E53780D1DD41}" ShortID="395598704">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="26783.1292517007"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
@@ -93,13 +538,981 @@
 											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Blue" ID="{1B966400-D6B8-446A-B524-1FDAF8BF5B48}" ShortID="257444387">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{89FD3A0A-A26D-44FE-AE28-1ADB66D0C8D4}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="mx_ambience_pad_Blue_AF#_2bar_120bpm" ID="{6227A835-6FF0-4DD5-9460-41C556C52272}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_AF#_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="429299737"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_G#A_2bar_120bpm" ID="{6819DEBC-8197-426D-A84E-7CAC9D1433DF}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_G#A_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="102407324"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_G#F#_2bar_120bpm" ID="{35410778-DBAF-4D42-B7EB-87BF2AA4B5E7}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_G#F#_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="360695056"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_GA_2bar_120bpm" ID="{BA5209CE-6D71-4355-B9E9-9D8F2C54951A}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_GA_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="757670044"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_GF#_2bar_120bpm" ID="{CE82D58C-E2D2-48F1-9B57-2C3DFA64A319}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_GF#_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="263105524"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_GG#_2bar_120bpm" ID="{C9ED62F0-297C-4DE3-852D-4E4E06C425C8}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_GG#_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="177292950"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{9E8D72A9-E16F-4CBA-9109-3A3AD81124C3}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_AF#_2bar_120bpm" ID="{EB90ECBE-8FD2-4F2D-9F73-C2D1D221FA6D}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_AF#_2bar_120bpm" ID="{6227A835-6FF0-4DD5-9460-41C556C52272}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{5BDA4C08-2000-479D-AB1C-F59116FB2620}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_G#A_2bar_120bpm" ID="{B17EDA8C-5013-4E19-B2D4-A43BE4BDA426}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_G#A_2bar_120bpm" ID="{6819DEBC-8197-426D-A84E-7CAC9D1433DF}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{17CEC15D-9E67-49BC-9C1E-A7CA07AD2A8C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_G#F#_2bar_120bpm" ID="{9437FA36-3A3E-45C5-923F-8A62BB5A0A3F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_G#F#_2bar_120bpm" ID="{35410778-DBAF-4D42-B7EB-87BF2AA4B5E7}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{707C6D60-10B2-49F8-955A-365FA882DB21}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_GA_2bar_120bpm" ID="{083BFE42-CEF1-405D-A978-334BB2F1018A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_GA_2bar_120bpm" ID="{BA5209CE-6D71-4355-B9E9-9D8F2C54951A}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{70B3E58E-1382-4E83-A26A-813EA5C198B0}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_GF#_2bar_120bpm" ID="{A59CFA05-833C-4586-A4BF-7003482EB47B}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_GF#_2bar_120bpm" ID="{CE82D58C-E2D2-48F1-9B57-2C3DFA64A319}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{E01ED9D7-2252-4B17-927E-1AE0CF89BECA}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_GG#_2bar_120bpm" ID="{5F0AB255-3835-4961-B01E-C071C62F5029}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_GG#_2bar_120bpm" ID="{C9ED62F0-297C-4DE3-852D-4E4E06C425C8}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Red" ID="{281994E1-5794-45B7-A94A-C386BFDCC712}" ShortID="4082047">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{2D0A750B-8212-4863-8D32-397EF42CCDBC}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="mx_ambience_pad_Red_C#D#_2bar_120bpm" ID="{F7F71B57-245E-43F2-9EEB-22D3FB156966}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_C#D#_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="893392271"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_C#D_2bar_120bpm" ID="{55B9A429-C3C6-451A-8557-43C6834EB908}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_C#D_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="902780244"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CC#_2bar_120bpm" ID="{BAB87B70-01E7-48A7-BEAB-9ED8942FC7F4}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CC#_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="10320113"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CD#_2bar_120bpm" ID="{A5181C58-F73D-413A-8C1D-42BCB55B336A}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CD#_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="354674252"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CD_2bar_120bpm" ID="{2A4718A4-E91F-4BD8-8078-635C6D09DA0A}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CD_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="892460513"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_DD#_2bar_120bpm" ID="{FF5A9E8C-536D-416F-ADC8-5B7DE95671BB}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_DD#_2bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="912072526"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{A0517E2A-5B69-4887-9C6B-02E71FA2EF5A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_C#D#_2bar_120bpm" ID="{BDFF2464-CD54-4D49-8154-9289F00A6AA5}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D#_2bar_120bpm" ID="{F7F71B57-245E-43F2-9EEB-22D3FB156966}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{C9EE3392-1F26-4155-9DCF-A00C2523CE68}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_C#D_2bar_120bpm" ID="{DA6222CA-424E-4595-A995-816CE5C8520A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D_2bar_120bpm" ID="{55B9A429-C3C6-451A-8557-43C6834EB908}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{5409FDE7-5D74-4416-A449-C102EAE9AA6C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CC#_2bar_120bpm" ID="{776F11AA-6A3B-4C01-9F23-145DCE37145B}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CC#_2bar_120bpm" ID="{BAB87B70-01E7-48A7-BEAB-9ED8942FC7F4}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{D00DBC4F-F6E9-4AF9-B0E7-F891458C73AB}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CD#_2bar_120bpm" ID="{8B21AEC7-2D58-4887-AC3B-DE799952DB4F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CD#_2bar_120bpm" ID="{A5181C58-F73D-413A-8C1D-42BCB55B336A}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{8B030C35-9FE0-4B7D-B47B-FE9903221012}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CD_2bar_120bpm" ID="{856EA769-10EB-4433-8850-EFF5E5043B9F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CD_2bar_120bpm" ID="{2A4718A4-E91F-4BD8-8078-635C6D09DA0A}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{E7F72577-B278-4546-9A03-F0253F34CE22}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_DD#_2bar_120bpm" ID="{C2620AE6-0EFE-47F9-A35F-8F7D95D87FB4}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_DD#_2bar_120bpm" ID="{FF5A9E8C-536D-416F-ADC8-5B7DE95671BB}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
 									<ObjectLists>
 										<ObjectList Name="Cues">
 											<MusicCue Name="Entry Cue" ID="{855F2B36-A4D6-4152-A037-8325F3821717}"/>
 											<MusicCue Name="Exit Cue" ID="{5F6AADFD-BEDB-4DDF-B632-AFCF1ACE0583}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="1000"/>
+													<Property Name="TimeMs" Type="Real64" Value="4000"/>
+												</PropertyList>
+											</MusicCue>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="Three Bar Tension" ID="{06CD19C7-3414-4E85-9A9B-8301B174F62B}" ShortID="237552847">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="40157.8231292517"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Blue" ID="{0B067A0D-F7DC-40C8-B53A-BA68454370D9}" ShortID="820479053">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{5D4F5C6A-1AE1-4774-B47B-F156AEDA5DC9}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="mx_ambience_pad_Blue_F#A_3bar_120bpm" ID="{CB1016D8-1D4C-40D2-9261-3802D5275B0C}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_F#A_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="678888749"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_F#G#_3bar_120bpm" ID="{A15CC740-C4C2-44E6-BDF2-44407F5A9DDE}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_F#G#_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="341193094"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_F#G_3bar_120bpm" ID="{BF6591B6-C274-48EB-8BC6-ACE3CEE3F91D}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_F#G_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="860451539"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_G#A_3bar_120bpm" ID="{B96B279B-C7A9-4BB7-A475-DD765C136342}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_G#A_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="242242505"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_GA_3bar_120bpm" ID="{A23BDC36-03C6-4DAB-92B3-238DD8F33C47}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_GA_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="566819289"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_GG#_3bar_120bpm" ID="{3FD2507D-5CDF-4F25-8FEA-433D0F9420E7}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_GG#_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="804465246"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{8D436F75-49E8-4051-B8BE-A6B8E654F8C8}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_F#A_3bar_120bpm" ID="{DA174983-DA36-4E3F-9CC6-B9DEFF37F3CF}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#A_3bar_120bpm" ID="{CB1016D8-1D4C-40D2-9261-3802D5275B0C}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{A7A578A5-0268-45D5-BB76-F26DC40BBB48}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_F#G#_3bar_120bpm" ID="{341C62FB-B83B-4DB9-BA56-A7C408258150}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G#_3bar_120bpm" ID="{A15CC740-C4C2-44E6-BDF2-44407F5A9DDE}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{05490D3F-98DA-4906-859A-EEE900F09D35}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_F#G_3bar_120bpm" ID="{3F652DDF-233A-4911-89A2-D1ED101886A4}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G_3bar_120bpm" ID="{BF6591B6-C274-48EB-8BC6-ACE3CEE3F91D}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{0CB84044-F260-4194-BBDB-1D5E43E9C0A1}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_G#A_3bar_120bpm" ID="{B93032E2-2F62-44AE-94A6-FE3A55F291B9}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_G#A_3bar_120bpm" ID="{B96B279B-C7A9-4BB7-A475-DD765C136342}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{F616A18A-AE27-487A-85E6-AE3EEFEC79ED}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_GG#_3bar_120bpm" ID="{7FBCEE0C-3A55-4348-BC64-7C980CE69FA7}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_GG#_3bar_120bpm" ID="{3FD2507D-5CDF-4F25-8FEA-433D0F9420E7}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{4B9ED878-B0DB-407E-9E84-E7B4115FA74A}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_GA_3bar_120bpm" ID="{5B58C258-DC88-4FD5-A766-AB139654F554}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_GA_3bar_120bpm" ID="{A23BDC36-03C6-4DAB-92B3-238DD8F33C47}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Red" ID="{CF3FAEA0-A0D2-4065-9F1F-E1E3A715CFF8}" ShortID="328314912">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{ADF96008-EA43-453A-B7B4-B6C39F515254}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="mx_ambience_pad_Red_C#D#_3bar_120bpm" ID="{E50FD68F-EFE7-4200-865F-B62B3B5D70E1}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_C#D#_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="846082782"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_C#D_3bar_120bpm" ID="{D177A6E6-B70F-46B3-9848-289B65D65312}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_C#D_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="78384471"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CC#_3bar_120bpm" ID="{C486770D-4C3A-4F50-931A-258F44360117}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CC#_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="746818244"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CD#_3bar_120bpm" ID="{CF7E29A3-0485-4F16-953D-DD585BF649B0}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CD#_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="205993965"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CD_3bar_120bpm" ID="{D14D73DC-0116-4D4D-A6EF-4C5094DE1C5F}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CD_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="449151565"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_DD#_3bar_120bpm" ID="{5CAC2E85-E176-4A45-87F4-B28BA43BCB71}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_DD#_3bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="383462550"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{F3E62719-4736-48BB-9ABC-B1F3AB31AFB5}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_C#D#_3bar_120bpm" ID="{3E951EF7-A0A5-4AB4-B498-08A1F2DEEF9F}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D#_3bar_120bpm" ID="{E50FD68F-EFE7-4200-865F-B62B3B5D70E1}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{617439C6-B4D1-4367-B447-00B874782B1F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_C#D_3bar_120bpm" ID="{4C8ECA3F-8699-4752-8C2E-96568086E4DA}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D_3bar_120bpm" ID="{D177A6E6-B70F-46B3-9848-289B65D65312}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{A05CF41C-F428-49ED-A0F2-DC897E02CC88}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CC#_3bar_120bpm" ID="{0C45E61D-4FE6-4D54-A4D6-B15D5B849325}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CC#_3bar_120bpm" ID="{C486770D-4C3A-4F50-931A-258F44360117}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{42C46FB7-E56D-49F7-B892-E8C74EB81D5D}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CD#_3bar_120bpm" ID="{A6505F2E-340C-4EF9-BCE5-98546410C0A5}">
+																	<PropertyList>
+																		<Property Name="BeginTrimOffset" Type="Real64" Value="1.11022302462516E-13"/>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="-1.11022302462516E-13"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CD#_3bar_120bpm" ID="{CF7E29A3-0485-4F16-953D-DD585BF649B0}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{7CDB6C6B-21D6-4250-84A8-D9276FF017F8}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CD_3bar_120bpm" ID="{6EF1620D-211C-4888-B50E-2BDCF8812047}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CD_3bar_120bpm" ID="{D14D73DC-0116-4D4D-A6EF-4C5094DE1C5F}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{F5085D7E-D69B-4846-A273-57A7C804D100}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_DD#_3bar_120bpm" ID="{96091ED0-004F-4642-8B65-C468B50B12F0}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_DD#_3bar_120bpm" ID="{5CAC2E85-E176-4A45-87F4-B28BA43BCB71}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<MusicCue Name="Entry Cue" ID="{DEBC02FF-C1C9-4C31-948A-26FB0F1C6341}"/>
+											<MusicCue Name="Exit Cue" ID="{8626AFB5-9381-4B29-B56F-B2E5EEE6947B}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="6000"/>
+												</PropertyList>
+											</MusicCue>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="Four Bar Tension" ID="{47F14CE7-6381-43A8-8F26-F2DF303DB7A3}" ShortID="232030061">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="53532.5170068027"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="Blue" ID="{81A8CD50-8E66-4235-A763-B250EF2F8C07}" ShortID="370471187">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{2D6A7E0F-81F5-47EB-8AB9-4F2BB96722B3}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="mx_ambience_pad_Blue_AF#_4bar_120bpm" ID="{051CA5A0-6D85-4C4B-8235-D193707B1C15}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_AF#_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="944289266"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_G#A_4bar_120bpm" ID="{0C1C3AC0-2A8B-4520-AC4D-D53E1A96D38C}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_G#A_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="854527270"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_GA_4bar_120bpm" ID="{DD4CF680-24F8-4830-83D9-AE6A700FFAEF}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_GA_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="267034122"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_GG#_4bar_120bpm" ID="{97FA7490-E065-49D5-BBB5-39D2A53FBD3A}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_GG#_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="781188553"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_F#G#_4bar_120bpm" ID="{40C177B7-862D-4751-96E5-060804A412DF}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_F#G#_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1047260527"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Blue_F#G_4bar_120bpm" ID="{F3D24902-1E87-47D6-A4F6-7771111406CF}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Blue_F#G_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="796063810"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{0EBE6501-33C3-4FA7-8237-30FFB362A272}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_AF#_4bar_120bpm" ID="{C28E1AE2-E545-4E8A-8791-190D09FE4926}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_AF#_4bar_120bpm" ID="{051CA5A0-6D85-4C4B-8235-D193707B1C15}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{219284CE-329E-407A-A7F7-5EF3C804DB36}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_G#A_4bar_120bpm" ID="{5C939A47-43DD-4D41-9A36-E554A9B33967}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_G#A_4bar_120bpm" ID="{0C1C3AC0-2A8B-4520-AC4D-D53E1A96D38C}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{9D650AFB-F5F8-4150-80A8-C4A8FE03662C}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_GA_4bar_120bpm" ID="{B49A7326-1208-4E58-9DD4-2C6B3367AA8A}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_GA_4bar_120bpm" ID="{DD4CF680-24F8-4830-83D9-AE6A700FFAEF}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{00388ED7-A0C6-43A8-AAAD-8C5632DCC525}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_GG#_4bar_120bpm" ID="{C0ECFA50-878C-415B-8C4F-1945F0424586}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_GG#_4bar_120bpm" ID="{97FA7490-E065-49D5-BBB5-39D2A53FBD3A}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{47235EEE-970A-4F34-904A-5F523BD2A742}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_F#G#_4bar_120bpm" ID="{2F76C1F2-DC27-462F-BAED-999FEFCF1F45}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G#_4bar_120bpm" ID="{40C177B7-862D-4751-96E5-060804A412DF}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{0F00A75C-9B69-4932-B049-3553DA4EDE49}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Blue_F#G_4bar_120bpm" ID="{93133130-F23B-44B0-9733-7152939C723E}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G_4bar_120bpm" ID="{F3D24902-1E87-47D6-A4F6-7771111406CF}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+										<MusicTrack Name="Red" ID="{3ED12C14-D09E-4FF8-84B9-D94AB9719804}" ShortID="980574983">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{C8F9CF51-9719-46F7-BEE5-2E11A1A57E98}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="mx_ambience_pad_Red_C#D#_4bar_120bpm" ID="{2F1798C0-63DF-4861-A05A-248ED7C6C3CB}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_C#D#_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="385285438"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_C#D_4bar_120bpm" ID="{A810025E-D8A5-4006-8ADE-AAA4344C437C}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_C#D_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="276602890"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CC#_4bar_120bpm" ID="{B05D100F-09A3-4742-9F65-8053EF6C50DD}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CC#_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="187731471"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CD#_4bar_120bpm" ID="{8F1FC6A2-EFB1-4952-BAF8-2EFEB3FDECDD}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CD#_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="103653062"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_CD_4bar_120bpm" ID="{192AD581-D986-4DA3-B723-10B65FF41761}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_CD_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="391361255"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="mx_ambience_pad_Red_DD#_4bar_120bpm" ID="{444A0F18-91C9-475B-A1FC-F6ECF74B2F16}">
+													<Language>SFX</Language>
+													<AudioFile>mx_ambience_pad_Red_DD#_4bar_120bpm.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="963323804"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<MusicTrackSequence Name="" ID="{D5D24E15-848D-4E67-AB4B-349AD2751D15}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_C#D#_4bar_120bpm" ID="{5B568AF3-9747-44AC-BD0F-AB396A2B00BA}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D#_4bar_120bpm" ID="{2F1798C0-63DF-4861-A05A-248ED7C6C3CB}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{FB7F2CB6-A837-461C-BABE-7CE0FF144F84}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_C#D_4bar_120bpm" ID="{BE881CD3-35D4-4CFE-BEEC-3B8C3D7C6275}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D_4bar_120bpm" ID="{A810025E-D8A5-4006-8ADE-AAA4344C437C}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{D2080138-212A-47DC-A5BA-AA3CB38FDFDF}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CC#_4bar_120bpm" ID="{ED0D64D6-B9C8-4F2E-AEE5-C443AF9C2148}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CC#_4bar_120bpm" ID="{B05D100F-09A3-4742-9F65-8053EF6C50DD}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{54F447DA-32F6-4875-83AC-632B28FA46C3}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CD#_4bar_120bpm" ID="{A4CF8B3D-96C0-4386-8247-88D4C1B95888}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CD#_4bar_120bpm" ID="{8F1FC6A2-EFB1-4952-BAF8-2EFEB3FDECDD}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{D9AE052A-07CC-4F5E-9F79-59B26E80BC3F}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_CD_4bar_120bpm" ID="{B59C312F-C675-4C28-9D81-F430270613C9}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_CD_4bar_120bpm" ID="{192AD581-D986-4DA3-B723-10B65FF41761}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{D2B0830C-EB60-4699-AF3F-A5C6B365A556}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<MusicClip Name="mx_ambience_pad_Red_DD#_4bar_120bpm" ID="{E06560A6-877D-424A-87AB-17FBF60345D2}">
+																	<PropertyList>
+																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
+																		<Property Name="FadeInMode" Type="int16" Value="0"/>
+																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																	</PropertyList>
+																	<AudioSourceRef Name="mx_ambience_pad_Red_DD#_4bar_120bpm" ID="{444A0F18-91C9-475B-A1FC-F6ECF74B2F16}"/>
+																</MusicClip>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<MusicCue Name="Entry Cue" ID="{11871C06-BA31-4AFD-AA70-8B4F5D29068C}"/>
+											<MusicCue Name="Exit Cue" ID="{4C460410-35DD-43EC-B2C5-FB2499950FB1}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="8000"/>
 												</PropertyList>
 											</MusicCue>
 										</ObjectList>

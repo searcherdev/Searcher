@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8B095D4D-4B03-428F-B2F8-F65EB4830D4B}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="SFX" ID="{8B095D4D-4B03-428F-B2F8-F65EB4830D4B}" PersistMode="Standalone">
+			<ChildrenList>
+				<PropertyContainer Name="SFX" ID="{CCC6260E-3FB7-4306-984C-10452FF8A38A}" ShortID="193863753">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{EC5C97A4-EA4A-4B8B-A270-D8C6B5744195}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Folder Name="Asteroids" ID="{8DF00C62-C1F5-4A2E-8D3A-E068C056A51D}" ShortID="279891022">
+							<ChildrenList>
+								<Sound Name="Asteroid Ambient" ID="{62CFBBAD-E8F5-49FC-8ECB-752588159412}" ShortID="73429707">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="sfx_ambience_asteroid_ambient_loop" ID="{E4D24307-F969-432F-A959-50417B6AD89F}">
+											<PropertyList>
+												<Property Name="LoopEnd" Type="Real64" Value="6.09644899281452"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>sfx_ambience_asteroid_ambient_loop.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="238464404"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="sfx_ambience_asteroid_ambient_loop" ID="{E4D24307-F969-432F-A959-50417B6AD89F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</Folder>
+						<Folder Name="N0MAD" ID="{D4586B34-DC71-4866-B3C2-CA3751E3CCB2}" ShortID="296461965">
+							<ChildrenList>
+								<BlendContainer Name="Ship Movement" ID="{2FC332EF-6814-41B6-B71B-78CB55F61973}" ShortID="41824219">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Growl" ID="{972FECD9-452A-4CFC-9632-8E2524FB8128}" ShortID="247970937">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Synth One" ID="{38E7D30A-AEBF-4487-BE1E-72D493791806}" ShortID="876753022" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+													<PropertyList>
+														<Property Name="BaseFrequency" Type="Real32" Value="33"/>
+														<Property Name="NoiseLevel" Type="Real32" Value="-9"/>
+														<Property Name="NoiseShape" Type="int32" Value="2"/>
+														<Property Name="Osc1Waveform" Type="int32" Value="3"/>
+														<Property Name="Osc2Level" Type="Real32" Value="-8"/>
+														<Property Name="Osc2Pwm" Type="Real32" Value="49"/>
+														<Property Name="Osc2Waveform" Type="int32" Value="2"/>
+													</PropertyList>
+													<ObjectLists>
+														<ObjectList Name="RTPC">
+															<RTPC Name="" ID="{285369D3-D231-4344-9397-DCD5AB0DBA61}" ShortID="1070603461">
+																<PropertyList>
+																	<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="ControlInput">
+																		<Custom>
+																			<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{3649B960-5D82-44A8-AAAB-2C09310E5364}" ShortID="589602817">
+																				<PropertyList>
+																					<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+																				</PropertyList>
+																			</ModulatorEnvelope>
+																		</Custom>
+																	</Reference>
+																	<Reference Name="Curve">
+																		<Custom>
+																			<Curve Name="" ID="{30999E4F-F7FB-4F18-97E0-D703BCD99576}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</Custom>
+																	</Reference>
+																</ReferenceList>
+															</RTPC>
+														</ObjectList>
+													</ObjectLists>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Synth One" ID="{38E7D30A-AEBF-4487-BE1E-72D493791806}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Wooshj" ID="{491A0BF9-F5E6-473D-AD6F-86CBCD3F260C}" ShortID="783954510">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Tone Generator" ID="{142DC800-B39C-4385-A030-A97B867F1A04}" ShortID="645537257" PluginName="Wwise Tone Generator" CompanyID="0" PluginID="102">
+													<PropertyList>
+														<Property Name="DecayTime" Type="Real32" Value="1.5"/>
+														<Property Name="FixDur" Type="Real32" Value="10"/>
+														<Property Name="ReleaseTime" Type="Real32" Value="3.9"/>
+														<Property Name="SustainLevel" Type="Real32" Value="-18.5"/>
+														<Property Name="WaveGain" Type="Real32" Value="-16.5"/>
+														<Property Name="WaveType" Type="int32" Value="4"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Tone Generator" ID="{142DC800-B39C-4385-A030-A97B867F1A04}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<BlendTrackList>
+										<BlendTrack Name="Ship Movement" ID="{0522285E-1055-47ED-AEC2-91C7924E5D52}" ShortID="517510034">
+											<PropertyList>
+												<Property Name="EnableCrossFading" Type="bool" Value="True"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="LayerCrossFadeControlInput">
+													<ObjectRef Name="Velocity" ID="{CAB4591E-792E-4B10-BC79-E59A225706B2}" WorkUnitID="{C420B71C-2E71-4C90-B567-50758255A849}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="RTPC">
+													<RTPC Name="" ID="{C7D0B079-95A0-41B3-A0D8-98A8428CE401}" ShortID="752306902">
+														<PropertyList>
+															<Property Name="PropertyName" Type="string" Value="Pitch"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="ControlInput">
+																<ObjectRef Name="Velocity" ID="{CAB4591E-792E-4B10-BC79-E59A225706B2}" WorkUnitID="{C420B71C-2E71-4C90-B567-50758255A849}"/>
+															</Reference>
+															<Reference Name="Curve">
+																<Custom>
+																	<Curve Name="" ID="{F6401AC2-D9C4-484D-82D4-9F50C1F20617}">
+																		<PropertyList>
+																			<Property Name="Flags" Type="int32" Value="65537"/>
+																		</PropertyList>
+																		<PointList>
+																			<Point>
+																				<XPos>0</XPos>
+																				<YPos>-700</YPos>
+																				<Flags>5</Flags>
+																			</Point>
+																			<Point>
+																				<XPos>100</XPos>
+																				<YPos>900</YPos>
+																				<Flags>37</Flags>
+																			</Point>
+																		</PointList>
+																	</Curve>
+																</Custom>
+															</Reference>
+														</ReferenceList>
+													</RTPC>
+												</ObjectList>
+											</ObjectLists>
+											<BlendTrackAssocList>
+												<BlendTrackAssoc>
+													<ItemRef Name="Growl" ID="{972FECD9-452A-4CFC-9632-8E2524FB8128}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>0</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<RightEdgePos>90.8222811671087</RightEdgePos>
+														<RightFadingMode>None</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+												<BlendTrackAssoc>
+													<ItemRef Name="Wooshj" ID="{491A0BF9-F5E6-473D-AD6F-86CBCD3F260C}"/>
+													<CrossfadingInfo>
+														<LeftEdgePos>9.61513461538461</LeftEdgePos>
+														<LeftFadingMode>Automatic</LeftFadingMode>
+														<LeftFadingSegmentShape>Exp1</LeftFadingSegmentShape>
+														<RightEdgePos>100</RightEdgePos>
+														<RightFadingMode>Automatic</RightFadingMode>
+													</CrossfadingInfo>
+												</BlendTrackAssoc>
+											</BlendTrackAssocList>
+										</BlendTrack>
+									</BlendTrackList>
+								</BlendContainer>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</PropertyContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>
