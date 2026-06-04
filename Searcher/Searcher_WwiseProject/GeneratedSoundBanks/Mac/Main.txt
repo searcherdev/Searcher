@@ -2,6 +2,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	788884573	Stop			\Main\Stop	
 	1256624823	ToExplore			\Main\States\ToExplore	
 	1281810935	Start			\Main\Start	
+	3092587493	Pause			\Main\States\Pause	
+	3412868374	UnPause			\Main\States\UnPause	
 	3532929732	ToTitle			\Main\States\ToTitle	
 
 State Group	ID	Name			Wwise Object Path	Notes

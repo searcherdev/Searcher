@@ -21,6 +21,14 @@
 							<ObjectRef Name="ToTitle" ID="{37AEE9A0-A320-44D5-BA22-A95BE29EF5B5}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}"/>
 							<Position X="1" Y="1"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Pause" ID="{2D71F333-F8B7-4A62-A784-B2C5AE779434}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="UnPause" ID="{75C5AF20-499C-4282-9C15-FDF6B2231EB4}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}"/>
+							<Position X="2" Y="1"/>
+						</Module>
 					</ModuleList>
 				</SoundcasterSession>
 			</ChildrenList>

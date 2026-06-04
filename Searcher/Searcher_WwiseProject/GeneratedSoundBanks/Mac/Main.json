@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{292E6FCE-A9E6-4E86-BCD2-B07D9F14FACB}",
     "Language": "SFX",
-    "Hash": "{F3D3A0D4-263B-98F3-3944-DB1CFDB29764}",
+    "Hash": "{2863C432-398A-25DC-1884-C7F4C1ABADA1}",
     "ObjectPath": "\\SoundBanks\\Main\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -410,6 +410,16 @@
     ],
     "Events": [
      {
+      "Id": "3092587493",
+      "Name": "Pause",
+      "ObjectPath": "\\Events\\Main\\States\\Pause",
+      "GUID": "{2D71F333-F8B7-4A62-A784-B2C5AE779434}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "1281810935",
       "Name": "Start",
       "ObjectPath": "\\Events\\Main\\Start",
@@ -641,6 +651,16 @@
         "GUID": "{C6899F26-0083-47F8-8169-84E05E23FF05}"
        }
       ]
+     },
+     {
+      "Id": "3412868374",
+      "Name": "UnPause",
+      "ObjectPath": "\\Events\\Main\\States\\UnPause",
+      "GUID": "{75C5AF20-499C-4282-9C15-FDF6B2231EB4}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      }
     ],
     "StateGroups": [
@@ -679,6 +699,6 @@
     ]
    }
   ],
-  "FileHash": "{3C3D9596-940E-3748-FA4C-45E90068004D}"
+  "FileHash": "{3EC60027-2E7E-03C4-6243-F5677ABB51DE}"
  }
 }

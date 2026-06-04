@@ -33,6 +33,39 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Pause" ID="{2D71F333-F8B7-4A62-A784-B2C5AE779434}">
+							<ChildrenList>
+								<Action Name="" ID="{20409F87-2032-4E9F-8A9D-AC55BF248B06}" ShortID="704564123">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="26"/>
+										<Property Name="FadeInCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+										<Property Name="Lowpass" Type="int16" Value="30"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="UnPause" ID="{75C5AF20-499C-4282-9C15-FDF6B2231EB4}">
+							<ChildrenList>
+								<Action Name="" ID="{9D5BC9DF-0C86-4E1C-8192-189B375903ED}" ShortID="161656674">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="27"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="6"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Event Name="Start" ID="{6F71434E-0E48-47E8-B32B-C176BFCF55A4}">

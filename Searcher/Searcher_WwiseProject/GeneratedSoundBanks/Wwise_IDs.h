@@ -13,10 +13,12 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PAUSE = 3092587493U;
         static const AkUniqueID START = 1281810935U;
         static const AkUniqueID STOP = 788884573U;
         static const AkUniqueID TOEXPLORE = 1256624823U;
         static const AkUniqueID TOTITLE = 3532929732U;
+        static const AkUniqueID UNPAUSE = 3412868374U;
     } // namespace EVENTS
 
     namespace STATES
