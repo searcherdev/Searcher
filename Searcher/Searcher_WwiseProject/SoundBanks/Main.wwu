@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{8AD6E1D1-2426-4CFF-9BCD-AE5B53FBA616}" SchemaVersion="133">
+	<SoundBanks>
+		<WorkUnit Name="Main" ID="{8AD6E1D1-2426-4CFF-9BCD-AE5B53FBA616}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Main" ID="{292E6FCE-A9E6-4E86-BCD2-B07D9F14FACB}">
+					<ObjectInclusionList>
+						<ObjectRef Name="ToExplore" ID="{1FADE9AB-6E68-40F3-A3EA-E8B82A68029F}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="States" ID="{5C7B93C0-DCB6-4302-B40D-5CDF38BDB4AA}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ToTitle" ID="{37AEE9A0-A320-44D5-BA22-A95BE29EF5B5}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Start" ID="{6F71434E-0E48-47E8-B32B-C176BFCF55A4}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop" ID="{38E0D0DC-141B-4824-9F1A-00898709AA51}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

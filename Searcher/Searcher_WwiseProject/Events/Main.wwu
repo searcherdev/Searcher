@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Main" ID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="States" ID="{5C7B93C0-DCB6-4302-B40D-5CDF38BDB4AA}" ShortID="746532804">
+					<ChildrenList>
+						<Event Name="ToTitle" ID="{37AEE9A0-A320-44D5-BA22-A95BE29EF5B5}">
+							<ChildrenList>
+								<Action Name="" ID="{09876627-7AFB-4A65-9DBF-02F0A6A527B8}" ShortID="867809159">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Title" ID="{C6899F26-0083-47F8-8169-84E05E23FF05}" WorkUnitID="{ADC92D8A-A148-40A2-BC0C-D68AE013F667}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="ToExplore" ID="{1FADE9AB-6E68-40F3-A3EA-E8B82A68029F}">
+							<ChildrenList>
+								<Action Name="" ID="{00242B19-A82F-4670-A4E4-380AE1F32C11}" ShortID="119134706">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Explore" ID="{3B0A66FC-E9E8-45EB-9CBF-9A1F7D33711C}" WorkUnitID="{ADC92D8A-A148-40A2-BC0C-D68AE013F667}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="Start" ID="{6F71434E-0E48-47E8-B32B-C176BFCF55A4}">
+					<ChildrenList>
+						<Action Name="" ID="{3664DB7E-277F-4846-91CE-BC7D5BC55CF2}" ShortID="402419240">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music" ID="{E13E8E28-A5AB-47F8-BC73-FB02E3A4F0DE}" WorkUnitID="{FC4E9EB9-04FD-4B11-AD33-72AD808888B7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{E8968BB8-AF0B-4E68-84DC-26EC1DF8BC2F}" ShortID="109953722">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="None" ID="{E71961D2-2206-4EA2-8D10-5BF504D7A388}" WorkUnitID="{ADC92D8A-A148-40A2-BC0C-D68AE013F667}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop" ID="{38E0D0DC-141B-4824-9F1A-00898709AA51}">
+					<ChildrenList>
+						<Action Name="" ID="{03E61834-782E-47A5-8944-124933376AAD}" ShortID="61635617">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

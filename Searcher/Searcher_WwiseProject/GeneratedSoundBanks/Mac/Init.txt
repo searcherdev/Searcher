@@ -1,0 +1,18 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3161908922	Main			\GameStates\Main	
+
+State	ID	Name	State Group			Notes
+	579523862	Explore	Main			
+	748895195	None	Main			
+	2764240573	Combat	Main			
+	3705726509	Title	Main			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	393239870	SFX			\Default Work Unit\Main Audio Bus\SFX	
+	1685527054	MX			\Default Work Unit\Main Audio Bus\MX	
+	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

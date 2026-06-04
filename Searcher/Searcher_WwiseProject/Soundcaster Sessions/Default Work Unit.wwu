@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F6574B0C-6DE3-4A66-BAAA-D2CBC1BBC6AB}" SchemaVersion="133">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{F6574B0C-6DE3-4A66-BAAA-D2CBC1BBC6AB}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F6574B0C-6DE3-4A66-BAAA-D2CBC1BBC6AB}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Main" ID="{8D88E5AC-D5CC-407E-B53C-387C6FAEF50B}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Start" ID="{6F71434E-0E48-47E8-B32B-C176BFCF55A4}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ToExplore" ID="{1FADE9AB-6E68-40F3-A3EA-E8B82A68029F}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop" ID="{38E0D0DC-141B-4824-9F1A-00898709AA51}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ToTitle" ID="{37AEE9A0-A320-44D5-BA22-A95BE29EF5B5}" WorkUnitID="{FB07DF46-8B17-4E61-B28E-B5C27AD0137B}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

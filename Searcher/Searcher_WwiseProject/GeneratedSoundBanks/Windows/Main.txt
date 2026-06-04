@@ -1,0 +1,66 @@
+Event	ID	Name			Wwise Object Path	Notes
+	788884573	Stop			\Main\Stop	
+	1256624823	ToExplore			\Main\States\ToExplore	
+	1281810935	Start			\Main\Start	
+	3532929732	ToTitle			\Main\States\ToTitle	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3161908922	Main			\GameStates\Main	
+
+State	ID	Name	State Group			Notes
+	579523862	Explore	Main			
+	748895195	None	Main			
+	2764240573	Combat	Main			
+	3705726509	Title	Main			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	10320113	Red	.cache\D2\{D21F7FF5-30C9-A6CB-44AE-FEC34694A6D5}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Red		787648
+	78384471	Red	.cache\3E\{3EB8E5C7-8CA4-96F7-91BA-2278B5D7A567}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Red		1180848
+	102407324	Blue	.cache\77\{7784F382-82AE-B419-78D5-69A859CB2EB5}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Blue		787648
+	103653062	Red	.cache\90\{90ED29BD-558A-BAEE-1A23-A8B266498A31}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Red		1574064
+	147241920	Blue	.cache\DC\{DCF2937F-7AD0-D8AD-3BCF-E72CDB313653}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Blue		394432
+	177292950	Blue	.cache\E1\{E1F2CF0C-4D20-4CEF-1C26-4BD76E51619F}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Blue		787648
+	187731471	Red	.cache\C1\{C19A042F-CF66-86AA-C55F-AFC2FF8E661D}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Red		1574064
+	205993965	Red	.cache\A7\{A72DF823-1745-6EE9-92D0-BB28C761C2BC}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Red		1180848
+	238751890	Blue	.cache\B7\{B7AD5B02-0E92-C486-581B-FD761C712C02}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Blue		394432
+	242242505	Blue	.cache\0A\{0A88E6B1-10A3-F69F-807A-9F699FDF5231}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Blue		1180848
+	263105524	Blue	.cache\FD\{FD2443C3-6AC4-84D9-89AC-C7EA982C9792}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Blue		787648
+	267034122	Blue	.cache\09\{0987E6F4-71DF-9F75-97AA-3729859E5154}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Blue		1574064
+	276602890	Red	.cache\95\{95E8B4B3-610E-BE01-2B48-6958F6DBBAF0}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Red		1574064
+	341193094	Blue	.cache\80\{80C1179A-9901-0304-3CF7-FCE02D385042}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Blue		1180848
+	345951274	Red	.cache\B4\{B4B82D94-D086-B160-321B-63BA8FD80F19}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Red		394432
+	354674252	Red	.cache\68\{68A3473C-0794-B04D-854A-837C63F367D3}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Red		787648
+	360695056	Blue	.cache\04\{0490DC77-5C61-2646-60E5-C6AF9DAF4613}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Blue		787648
+	382485359	Blue	.cache\94\{941F8C42-B2DA-82A3-4725-D9A3BF758516}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Blue		394432
+	383462550	Red	.cache\AE\{AE0D2C2E-6053-48BC-A851-33C0E366C6A0}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Red		1180848
+	385285438	Red	.cache\EC\{EC559A2A-D1BE-1308-81C0-46E9212190C8}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Red		1574064
+	391361255	Red	.cache\2D\{2DA41FF0-8D92-43CE-6FBD-B96E96874531}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Red		1574064
+	395690936	Blue	.cache\1E\{1E281FEF-CF43-229A-6557-2073699924D8}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Blue		394432
+	429299737	Blue	.cache\9C\{9C95E703-DC86-4E13-390C-B8BA6832A3CE}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Blue		787648
+	445436935	Red	.cache\87\{878C74F1-C0BF-DA97-C562-180BB046755A}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Red		394432
+	449151565	Red	.cache\9E\{9E8AFE30-2FE3-386E-E8B9-300F1C28BAD4}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Red		1180848
+	545923439	Red	.cache\A9\{A9A0DC01-284B-3EA8-6DEC-F86EBFF0280C}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Red		394432
+	566819289	Blue	.cache\4E\{4EADD18C-64B1-3142-5077-BB98E7D45EC7}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Blue		1180848
+	621135786	Blue	.cache\E8\{E85C36B3-1DC5-A0CE-3AAF-F62CF08EC9A4}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Blue		394432
+	678888749	Blue	.cache\6B\{6BEB6635-4572-D787-6529-7D3CDCCF869B}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Blue		1180848
+	740289943	Blue	.cache\36\{363B3AE4-0E1D-5F1B-ECAE-51A503EBC008}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Blue		394432
+	746818244	Red	.cache\AF\{AFCD83BE-2527-9CBA-F256-228E4F106DB2}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Red		1180848
+	757670044	Blue	.cache\C6\{C6823679-FEF6-F2BC-E058-1378635B3A6D}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Blue		787648
+	781188553	Blue	.cache\FE\{FEAABC34-7FF6-2C7D-43BC-60288C7D4083}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Blue		1574064
+	796063810	Blue	.cache\F2\{F26FE9ED-5851-766D-526A-2C3EB80E8A91}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Blue		1574064
+	804465246	Blue	.cache\0E\{0EA976A0-1D09-F0D2-E36E-8D84A0A89817}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Blue		1180848
+	843444672	Red	.cache\7A\{7AF6AE14-2EB0-7E3A-6D90-651BE106C7EE}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Red		394432
+	846082782	Red	.cache\F3\{F3057D85-5319-6A1F-06F9-C01A4EB534E6}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Red		1180848
+	854527270	Blue	.cache\A3\{A349CBC8-D0DD-20EC-4E6C-34E1A433E970}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Blue		1574064
+	860451539	Blue	.cache\0D\{0DD36869-0D4F-E050-F2C7-E235EF291FA4}.wem		\Containers\Music\Music\Music\Explore\Three Bar Tension\Blue		1180848
+	892460513	Red	.cache\C3\{C3E82C8B-7083-F856-C107-10B07D7B504D}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Red		787648
+	893392271	Red	.cache\A7\{A7FAA670-0645-82FC-683E-60E25E62606F}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Red		787648
+	902780244	Red	.cache\78\{78316911-C7D9-1F19-7873-70322D0CEE43}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Red		787648
+	904336629	Red	.cache\A0\{A06745F7-ACFE-A2E1-60C1-309344DB405A}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Red		394432
+	912072526	Red	.cache\87\{8730D6AF-5039-86DA-2E45-E636E7B87183}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Red		787648
+	944289266	Blue	.cache\91\{912FA35F-40DF-B0D5-9320-EB7760AC6F72}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Blue		1574064
+	963323804	Red	.cache\C3\{C3688A40-D65D-F1DE-B611-B44AB53E5C94}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Red		1574064
+	963939848	MX_MainTitle_breakStrings_100bmp	.cache\D5\{D57E03DF-91C5-0F3D-B93C-9B083882D590}.wem		\Containers\Music\Music\Music\Title\MX_MainTitle_breakStrings_100bmp\MX_MainTitle_breakStrings_100bmp		13879420
+	979247662	Red	.cache\05\{05095AD4-A4E4-4C8D-F73A-056589AC3C2D}.wem		\Containers\Music\Music\Music\Explore\One Bar Tension\Red		394432
+	1047260527	Blue	.cache\E6\{E6228570-47FD-9334-D72D-3CB8DF8BA119}.wem		\Containers\Music\Music\Music\Explore\Four Bar Tension\Blue		1574064
+
