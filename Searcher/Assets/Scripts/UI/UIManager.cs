@@ -1,9 +1,10 @@
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using System.Collections.Generic;
 using UnityEngine.InputSystem;
-using System.Linq;
+using UnityEngine.UI;
+using static UnityEngine.GraphicsBuffer;
 
 public class UIManager : MonoBehaviour
 {
@@ -83,8 +84,32 @@ public class UIManager : MonoBehaviour
         foreach (MonoBehaviour slot in slotList) //Loop through all equipment slots
         {
             int index = slotList.IndexOf(slot); //Find the slot's index in slotList
-            if (slot == activeSlot) {  equipmentSlots.transform.GetChild(index).GetComponent<Image>().color = Color.darkGreen; } //If a slot is active, highlight it
-            else { equipmentSlots.transform.GetChild(index).GetComponent<Image>().color = Color.clear; } //If it's not active, clear any highlight
+            switch (slot)
+            {
+                case Harvester h:
+                    if (slot == activeSlot) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.darkGreen; } //If the slot is the active selected slot, highlight it green
+                    else if (slot != activeSlot && h.Active) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.cyan; } //If the slot isn't selected but its equipment is active, highlight it yellow
+                    else { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.clear; } //If it's not active or selected, clear any highlight
+
+                    if (h.Active) //Update equipment slot color scaling when active
+                    {
+                        Vector3 tempScale = equipmentSlots.transform.GetChild(index).GetChild(0).localScale;
+                        tempScale.x = h.Timer / h.Rate;
+                        equipmentSlots.transform.GetChild(index).GetChild(0).localScale = tempScale;
+                    }
+                    else //Set equipment slot color scaling to full when inactive
+                    {
+                        Vector3 tempScale = equipmentSlots.transform.GetChild(index).GetChild(0).localScale;
+                        tempScale.x = 1;
+                        equipmentSlots.transform.GetChild(index).GetChild(0).localScale = tempScale;
+                    }
+
+                    break;
+                default: //If there's nothing in the Equipment slot, set it green or nuthin'
+                    if (slot == activeSlot) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.darkGreen; }
+                    else { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.clear; }
+                    break;
+            }
         }
 
         //Activate/Deactivate Menu

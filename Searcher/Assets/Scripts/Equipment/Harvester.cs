@@ -22,6 +22,7 @@ public class Harvester : MonoBehaviour
     public float Rate { get { return rate; } set { rate = value; } }
     public float Range { get { return range; } set { range = value; } }
     public bool Active { get { return active; } }
+    public float Timer { get { return timer; } }
     public GameObject Target { get { return target; } }
     
     //==== START ====
@@ -120,6 +121,6 @@ public class Harvester : MonoBehaviour
         line.SetPosition(1, target.transform.position);
     }
 
-    public void SetActive(GameObject target) { active = true; this.target = target; Debug.Log("Harvester ON"); }
+    public void SetActive(GameObject target) { active = true; this.target = target; timer = 0f; Debug.Log("Harvester ON"); }
     public void SetInactive() { active = false; target = null; line.enabled = false; timer = 0f; Debug.Log("Harvester OFF"); }
 }
