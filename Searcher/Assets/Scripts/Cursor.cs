@@ -17,6 +17,7 @@ public class Cursor : MonoBehaviour
 
     //==== PROPERTIES ====
     public GameObject Target { get { return target; } set { target = value; } }
+    public GameObject CursorPrefab { get { return cursorPrefab; } }
 
     //==== START ====
     void Start()

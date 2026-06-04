@@ -87,7 +87,7 @@ public class UIManager : MonoBehaviour
             switch (slot)
             {
                 case Harvester h:
-                    if (slot == activeSlot) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.darkGreen; } //If the slot is the active selected slot, highlight it green
+                    if (slot == activeSlot) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.green; } //If the slot is the active selected slot, highlight it green
                     else if (slot != activeSlot && h.Active) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.cyan; } //If the slot isn't selected but its equipment is active, highlight it yellow
                     else { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.clear; } //If it's not active or selected, clear any highlight
 
@@ -106,7 +106,7 @@ public class UIManager : MonoBehaviour
 
                     break;
                 default: //If there's nothing in the Equipment slot, set it green or nuthin'
-                    if (slot == activeSlot) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.darkGreen; }
+                    if (slot == activeSlot) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.green; }
                     else { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.clear; }
                     break;
             }

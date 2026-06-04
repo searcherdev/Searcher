@@ -16,6 +16,9 @@ public class Harvester : MonoBehaviour
     private GameObject manager;
     private Collisions collisions;
 
+    private GameObject cursorPrefab;
+    private GameObject cursorInstance;
+
     LineRenderer line;
 
     //==== PROPERTIES ====
@@ -24,6 +27,7 @@ public class Harvester : MonoBehaviour
     public bool Active { get { return active; } }
     public float Timer { get { return timer; } }
     public GameObject Target { get { return target; } }
+    public GameObject CursorInstance { get { return cursorInstance; } }
     
     //==== START ====
     void Start()
@@ -33,6 +37,9 @@ public class Harvester : MonoBehaviour
         timer = 0f;
 
         manager = GameObject.FindGameObjectWithTag("Manager");
+        cursorPrefab = manager.GetComponent<Cursor>().CursorPrefab;
+        cursorInstance = null;
+
         collisions = new Collisions();
         line = GetComponent<LineRenderer>();
     }
@@ -45,8 +52,8 @@ public class Harvester : MonoBehaviour
             //If the Harvester should be Harvesting, then Harvest
             if ((target.GetComponent<Asteroid>() && Vector3.Distance(this.transform.position, target.transform.position) <= range) || (target.GetComponent<Nebula>() && collisions.CheckSpriteCollision(n0mad.gameObject, target)))
             {
-                Debug.Log("HARVESTING");
                 HarvesterBeam(); //Render UI Harvester Beam
+                HarvesterCursor(); //Render UI Harvester Targeting Cursor
 
                 //Harvester Update Timer
                 timer += Time.deltaTime;
@@ -61,7 +68,6 @@ public class Harvester : MonoBehaviour
             else //Otherwise, turn off the Harvester
             {
                 SetInactive();
-                Debug.Log("OFF - Out of Range");
             }
         }
     }
@@ -121,6 +127,34 @@ public class Harvester : MonoBehaviour
         line.SetPosition(1, target.transform.position);
     }
 
-    public void SetActive(GameObject target) { active = true; this.target = target; timer = 0f; Debug.Log("Harvester ON"); }
-    public void SetInactive() { active = false; target = null; line.enabled = false; timer = 0f; Debug.Log("Harvester OFF"); }
+    public void HarvesterCursor()
+    {
+        if (cursorInstance != null)
+        {
+            cursorInstance.transform.position = target.transform.position;
+            if (active && n0mad.ActiveSlot == this) cursorInstance.GetComponent<SpriteRenderer>().color = Color.green;
+            else if (active && n0mad.ActiveSlot != this) cursorInstance.GetComponent<SpriteRenderer>().color = Color.cyan;
+        }
+    }
+
+    public void SetActive(GameObject target) 
+    { 
+        active = true; 
+        this.target = target; 
+        timer = 0f;
+
+        if (cursorInstance != null) Destroy(cursorInstance);
+        cursorInstance = Instantiate(cursorPrefab);
+        cursorInstance.GetComponent<SpriteRenderer>().color = Color.cyan;
+    }
+    public void SetInactive() 
+    {
+        Destroy(cursorInstance);
+        cursorInstance = null;
+
+        active = false; 
+        target = null; 
+        line.enabled = false;
+        timer = 0f;
+    }
 }
