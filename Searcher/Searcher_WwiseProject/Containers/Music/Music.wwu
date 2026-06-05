@@ -331,6 +331,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#A_1bar_120bpm" ID="{559880AF-833F-4830-A337-A22BD85840F5}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{5AAE7B56-854A-44A0-B8FA-1BCDA78EA064}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.51282</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.50427</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -346,6 +377,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G#_1bar_120bpm" ID="{EB732B95-15DE-43BB-B49E-777C261B2150}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{9996026D-D2DD-4FB2-9A43-EFE639FF6EC7}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50855</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.50855</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -361,6 +423,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G_1bar_120bpm" ID="{5A095E2C-B6BA-43E8-A094-4B21AD7D44AF}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{4CD98EB2-531F-4AD9-84FB-6C06369118CF}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50855</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.50427</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -376,6 +469,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_G#A_1bar_120bpm" ID="{B54E464B-79BC-4024-9AF2-957F8B613883}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{A3FA2A3D-F38E-4CBE-B100-8623C70C4CD8}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50427</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.50427</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -391,6 +515,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_GA_1bar_120bpm" ID="{A05F215D-D04D-4367-B70F-3CC7442A88C1}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{2EC0A997-A257-48C8-A2A2-FD671055F35D}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50427</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.50427</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -406,6 +561,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_GG#_1bar_120bpm" ID="{4783AB43-600D-42B6-A725-1C493AF3A1C1}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{B8853240-43C7-44E4-8ADE-80AAC86D60C7}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50427</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.50427</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -491,6 +677,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D#_1bar_120bpm" ID="{835E0A50-ACC3-4273-9ACA-D417ABB5C369}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{330F1510-5B7E-4D72-9315-DD911296369E}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50427</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -506,6 +723,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D_1bar_120bpm" ID="{A9F415DA-2E4F-427B-8133-19600C17EF32}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{BA51AA59-0392-4892-A86F-9A2512972F68}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50427</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -521,6 +769,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CC#_1bar_120bpm" ID="{C9C808F3-387F-4022-83C1-469C4C0C25A9}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{16EDF4B7-2CBE-43AE-9AD7-AB31E9CBF571}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50427</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -536,6 +815,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD#_1bar_120bpm" ID="{2A904ED7-3799-4892-8828-30488526C8AE}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{D2966A8E-887E-47E6-9211-4B7D3729BA89}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50427</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.50427</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -551,6 +861,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD_1bar_120bpm" ID="{262995C0-1F69-4125-B9F6-64F90A8D8A80}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{4D274AB8-8AF5-4228-AFC4-78E817DF04CE}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.50427</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.5</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -566,6 +907,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_DD#_1bar_120bpm" ID="{4668879F-9CB4-407B-A196-9EB9EBF6F45B}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{C6ABC7B1-C689-4821-ABFA-DEF37AF4E29F}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.49573</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1.5</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.23473922902494</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -582,7 +954,7 @@
 											<MusicCue Name="Exit Cue" ID="{1B3F74BA-74B4-4BEF-BCF8-C372D14BFB50}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="3500"/>
+													<Property Name="TimeMs" Type="Real64" Value="4000"/>
 												</PropertyList>
 											</MusicCue>
 										</ObjectList>
@@ -1275,7 +1647,7 @@
 											<MusicCue Name="Exit Cue" ID="{8626AFB5-9381-4B29-B56F-B2E5EEE6947B}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="7000"/>
+													<Property Name="TimeMs" Type="Real64" Value="8000"/>
 												</PropertyList>
 											</MusicCue>
 										</ObjectList>
@@ -1408,7 +1780,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>3.01958</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -1454,7 +1826,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>2.9979</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -1500,7 +1872,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>2.9979</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -1546,7 +1918,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>3.01664</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -1592,7 +1964,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>3.01664</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -1638,12 +2010,12 @@
 																					</Point>
 																					<Point>
 																						<XPos>2.9979</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
 																						<XPos>5.00275</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -1754,7 +2126,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>2.9979</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -1800,7 +2172,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>3.01664</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -1832,6 +2204,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CC#_4bar_120bpm" ID="{B05D100F-09A3-4742-9F65-8053EF6C50DD}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{FACB2867-75B4-42E0-B84F-E9A40F34B387}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.02975</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>5.02898</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -1847,6 +2250,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD#_4bar_120bpm" ID="{8F1FC6A2-EFB1-4952-BAF8-2EFEB3FDECDD}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{976D9FD0-0875-4193-B2AD-10831F7E2E66}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.02975</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>5.02898</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -1862,6 +2296,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD_4bar_120bpm" ID="{192AD581-D986-4DA3-B723-10B65FF41761}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{FE1AF7D3-939A-401C-93AB-549AC119AB87}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.00915</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>5.02898</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -1877,6 +2342,37 @@
 																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_DD#_4bar_120bpm" ID="{444A0F18-91C9-475B-A1FC-F6ECF74B2F16}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{C35BC906-293D-4401-82CE-2CEAC518E417}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.05037</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>5.04959</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -1893,7 +2389,7 @@
 											<MusicCue Name="Exit Cue" ID="{4C460410-35DD-43EC-B2C5-FB2499950FB1}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="9000"/>
+													<Property Name="TimeMs" Type="Real64" Value="10000"/>
 												</PropertyList>
 											</MusicCue>
 										</ObjectList>

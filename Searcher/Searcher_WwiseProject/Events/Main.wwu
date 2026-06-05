@@ -83,7 +83,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="None" ID="{E71961D2-2206-4EA2-8D10-5BF504D7A388}" WorkUnitID="{ADC92D8A-A148-40A2-BC0C-D68AE013F667}"/>
+									<ObjectRef Name="Title" ID="{C6899F26-0083-47F8-8169-84E05E23FF05}" WorkUnitID="{ADC92D8A-A148-40A2-BC0C-D68AE013F667}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
