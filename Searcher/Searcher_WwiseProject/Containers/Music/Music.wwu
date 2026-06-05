@@ -328,6 +328,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#A_1bar_120bpm" ID="{559880AF-833F-4830-A337-A22BD85840F5}"/>
 																</MusicClip>
@@ -342,6 +343,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G#_1bar_120bpm" ID="{EB732B95-15DE-43BB-B49E-777C261B2150}"/>
 																</MusicClip>
@@ -356,6 +358,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G_1bar_120bpm" ID="{5A095E2C-B6BA-43E8-A094-4B21AD7D44AF}"/>
 																</MusicClip>
@@ -370,6 +373,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_G#A_1bar_120bpm" ID="{B54E464B-79BC-4024-9AF2-957F8B613883}"/>
 																</MusicClip>
@@ -384,6 +388,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_GA_1bar_120bpm" ID="{A05F215D-D04D-4367-B70F-3CC7442A88C1}"/>
 																</MusicClip>
@@ -398,12 +403,15 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_GG#_1bar_120bpm" ID="{4783AB43-600D-42B6-A725-1C493AF3A1C1}"/>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
 													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{EE663787-FA55-4E4C-BAA6-1128300ED4AF}"/>
+													<MusicTrackSequence Name="" ID="{6D4136DF-24D7-4A3C-A375-BBBF7322803E}"/>
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
@@ -480,6 +488,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D#_1bar_120bpm" ID="{835E0A50-ACC3-4273-9ACA-D417ABB5C369}"/>
 																</MusicClip>
@@ -494,6 +503,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D_1bar_120bpm" ID="{A9F415DA-2E4F-427B-8133-19600C17EF32}"/>
 																</MusicClip>
@@ -508,6 +518,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CC#_1bar_120bpm" ID="{C9C808F3-387F-4022-83C1-469C4C0C25A9}"/>
 																</MusicClip>
@@ -522,6 +533,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD#_1bar_120bpm" ID="{2A904ED7-3799-4892-8828-30488526C8AE}"/>
 																</MusicClip>
@@ -536,6 +548,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD_1bar_120bpm" ID="{262995C0-1F69-4125-B9F6-64F90A8D8A80}"/>
 																</MusicClip>
@@ -550,12 +563,15 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="2234.73922902494"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_DD#_1bar_120bpm" ID="{4668879F-9CB4-407B-A196-9EB9EBF6F45B}"/>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
 													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{9D37342E-D3A2-4522-8532-D5551B97B4E2}"/>
+													<MusicTrackSequence Name="" ID="{30CBB291-BD33-4099-B595-0446366E0EB4}"/>
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
@@ -566,7 +582,7 @@
 											<MusicCue Name="Exit Cue" ID="{1B3F74BA-74B4-4BEF-BCF8-C372D14BFB50}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="2000"/>
+													<Property Name="TimeMs" Type="Real64" Value="3500"/>
 												</PropertyList>
 											</MusicCue>
 										</ObjectList>
@@ -658,6 +674,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_AF#_2bar_120bpm" ID="{6227A835-6FF0-4DD5-9460-41C556C52272}"/>
 																</MusicClip>
@@ -672,6 +689,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_G#A_2bar_120bpm" ID="{6819DEBC-8197-426D-A84E-7CAC9D1433DF}"/>
 																</MusicClip>
@@ -686,6 +704,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_G#F#_2bar_120bpm" ID="{35410778-DBAF-4D42-B7EB-87BF2AA4B5E7}"/>
 																</MusicClip>
@@ -700,6 +719,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_GA_2bar_120bpm" ID="{BA5209CE-6D71-4355-B9E9-9D8F2C54951A}"/>
 																</MusicClip>
@@ -714,6 +734,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_GF#_2bar_120bpm" ID="{CE82D58C-E2D2-48F1-9B57-2C3DFA64A319}"/>
 																</MusicClip>
@@ -728,12 +749,15 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_GG#_2bar_120bpm" ID="{C9ED62F0-297C-4DE3-852D-4E4E06C425C8}"/>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
 													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{75AE9783-1A33-458B-A51B-2C2C0ABDCE10}"/>
+													<MusicTrackSequence Name="" ID="{FFD539F3-128E-4EAE-9678-298092758161}"/>
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
@@ -810,6 +834,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D#_2bar_120bpm" ID="{F7F71B57-245E-43F2-9EEB-22D3FB156966}"/>
 																</MusicClip>
@@ -824,6 +849,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D_2bar_120bpm" ID="{55B9A429-C3C6-451A-8557-43C6834EB908}"/>
 																</MusicClip>
@@ -838,6 +864,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CC#_2bar_120bpm" ID="{BAB87B70-01E7-48A7-BEAB-9ED8942FC7F4}"/>
 																</MusicClip>
@@ -852,6 +879,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD#_2bar_120bpm" ID="{A5181C58-F73D-413A-8C1D-42BCB55B336A}"/>
 																</MusicClip>
@@ -866,6 +894,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD_2bar_120bpm" ID="{2A4718A4-E91F-4BD8-8078-635C6D09DA0A}"/>
 																</MusicClip>
@@ -880,12 +909,15 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="4463.85487528345"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_DD#_2bar_120bpm" ID="{FF5A9E8C-536D-416F-ADC8-5B7DE95671BB}"/>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
 													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{164BBC34-E945-4907-B939-9198D63F2901}"/>
+													<MusicTrackSequence Name="" ID="{52E971B5-4B17-4BB5-99B6-D0FB7B360787}"/>
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
@@ -896,7 +928,7 @@
 											<MusicCue Name="Exit Cue" ID="{5F6AADFD-BEDB-4DDF-B632-AFCF1ACE0583}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="4000"/>
+													<Property Name="TimeMs" Type="Real64" Value="5000"/>
 												</PropertyList>
 											</MusicCue>
 										</ObjectList>
@@ -988,6 +1020,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#A_3bar_120bpm" ID="{CB1016D8-1D4C-40D2-9261-3802D5275B0C}"/>
 																</MusicClip>
@@ -1002,6 +1035,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G#_3bar_120bpm" ID="{A15CC740-C4C2-44E6-BDF2-44407F5A9DDE}"/>
 																</MusicClip>
@@ -1016,6 +1050,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G_3bar_120bpm" ID="{BF6591B6-C274-48EB-8BC6-ACE3CEE3F91D}"/>
 																</MusicClip>
@@ -1030,6 +1065,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_G#A_3bar_120bpm" ID="{B96B279B-C7A9-4BB7-A475-DD765C136342}"/>
 																</MusicClip>
@@ -1044,6 +1080,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_GG#_3bar_120bpm" ID="{3FD2507D-5CDF-4F25-8FEA-433D0F9420E7}"/>
 																</MusicClip>
@@ -1058,12 +1095,15 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_GA_3bar_120bpm" ID="{A23BDC36-03C6-4DAB-92B3-238DD8F33C47}"/>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
 													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{49F5657B-9E28-4527-8EA2-BAD0BF8E5669}"/>
+													<MusicTrackSequence Name="" ID="{93D8B0E9-9F0A-4336-81D0-6C26DF4E0BA5}"/>
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
@@ -1140,6 +1180,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D#_3bar_120bpm" ID="{E50FD68F-EFE7-4200-865F-B62B3B5D70E1}"/>
 																</MusicClip>
@@ -1154,6 +1195,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D_3bar_120bpm" ID="{D177A6E6-B70F-46B3-9848-289B65D65312}"/>
 																</MusicClip>
@@ -1168,6 +1210,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CC#_3bar_120bpm" ID="{C486770D-4C3A-4F50-931A-258F44360117}"/>
 																</MusicClip>
@@ -1183,7 +1226,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																		<Property Name="PlayAt" Type="Real64" Value="-1.11022302462516E-13"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD#_3bar_120bpm" ID="{CF7E29A3-0485-4F16-953D-DD585BF649B0}"/>
 																</MusicClip>
@@ -1198,6 +1241,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD_3bar_120bpm" ID="{D14D73DC-0116-4D4D-A6EF-4C5094DE1C5F}"/>
 																</MusicClip>
@@ -1212,12 +1256,15 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="6692.97052154195"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_DD#_3bar_120bpm" ID="{5CAC2E85-E176-4A45-87F4-B28BA43BCB71}"/>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
 													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{F4E95835-0C36-450A-AEE4-C99A654D99D3}"/>
+													<MusicTrackSequence Name="" ID="{4C8DEA8B-BDB3-440C-909C-DEA45BA9B1E3}"/>
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
@@ -1228,7 +1275,7 @@
 											<MusicCue Name="Exit Cue" ID="{8626AFB5-9381-4B29-B56F-B2E5EEE6947B}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="6000"/>
+													<Property Name="TimeMs" Type="Real64" Value="7000"/>
 												</PropertyList>
 											</MusicCue>
 										</ObjectList>
@@ -1320,8 +1367,64 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_AF#_4bar_120bpm" ID="{051CA5A0-6D85-4C4B-8235-D193707B1C15}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Lowpass">
+																			<Curve Name="" ID="{A7B033D8-1738-48B5-8BB6-3552C6DAAF86}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-1.12792</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>0.0144477611940298</XPos>
+																						<YPos>-1.12609353043902</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>0</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{F158E7CB-070D-4D49-BD2B-A9617276292A}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.01958</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>4.9917014925373</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -1334,8 +1437,40 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_G#A_4bar_120bpm" ID="{0C1C3AC0-2A8B-4520-AC4D-D53E1A96D38C}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{108E5496-E8D6-47B1-9794-ECF63894E8CF}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.9979</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>5.02149</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -1348,8 +1483,40 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_GA_4bar_120bpm" ID="{DD4CF680-24F8-4830-83D9-AE6A700FFAEF}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{20499BF7-E215-446A-BD26-317A476C1D12}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.9979</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>5.00275</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -1362,8 +1529,40 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_GG#_4bar_120bpm" ID="{97FA7490-E065-49D5-BBB5-39D2A53FBD3A}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{ABDED19C-5835-40C3-B295-6EE776D3C42E}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.01664</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>5.04022</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -1376,8 +1575,40 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G#_4bar_120bpm" ID="{40C177B7-862D-4751-96E5-060804A412DF}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{FBAE9A8E-3C42-4667-87D6-FE8472F7246F}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.29697</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.01664</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>5.02149</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -1390,12 +1621,46 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Blue_F#G_4bar_120bpm" ID="{F3D24902-1E87-47D6-A4F6-7771111406CF}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{108105CC-AF67-49C7-9EFB-56D117507A37}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.9979</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>5.00275</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
 													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{8220E7FB-8872-4F47-8E81-2F1F74749410}"/>
+													<MusicTrackSequence Name="" ID="{C925B8F5-B50C-48E1-9CBB-0E7F6A13EF86}"/>
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
@@ -1472,8 +1737,40 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D#_4bar_120bpm" ID="{2F1798C0-63DF-4861-A05A-248ED7C6C3CB}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{DF8E7F93-E8FA-4F56-A798-D6B76F4B6F6A}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>2.9979</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>5.02149</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -1486,8 +1783,40 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_C#D_4bar_120bpm" ID="{A810025E-D8A5-4006-8ADE-AAA4344C437C}"/>
+																	<PropertyCurveList>
+																		<PropertyCurve PropertyName="Volume">
+																			<Curve Name="" ID="{5CF14ACA-7648-4854-8CF5-25DF6AA0A514}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>5</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>3.01664</XPos>
+																						<YPos>-0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>5.00275</XPos>
+																						<YPos>0</YPos>
+																						<Flags>0</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>8.92208616780045</XPos>
+																						<YPos>-96.3</YPos>
+																						<Flags>37</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</PropertyCurve>
+																	</PropertyCurveList>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
@@ -1500,6 +1829,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CC#_4bar_120bpm" ID="{B05D100F-09A3-4742-9F65-8053EF6C50DD}"/>
 																</MusicClip>
@@ -1514,6 +1844,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD#_4bar_120bpm" ID="{8F1FC6A2-EFB1-4952-BAF8-2EFEB3FDECDD}"/>
 																</MusicClip>
@@ -1528,6 +1859,7 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_CD_4bar_120bpm" ID="{192AD581-D986-4DA3-B723-10B65FF41761}"/>
 																</MusicClip>
@@ -1542,12 +1874,15 @@
 																		<Property Name="EndTrimOffset" Type="Real64" Value="8922.08616780045"/>
 																		<Property Name="FadeInMode" Type="int16" Value="0"/>
 																		<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																		<Property Name="PlayAt" Type="Real64" Value="2000"/>
 																	</PropertyList>
 																	<AudioSourceRef Name="mx_ambience_pad_Red_DD#_4bar_120bpm" ID="{444A0F18-91C9-475B-A1FC-F6ECF74B2F16}"/>
 																</MusicClip>
 															</ObjectList>
 														</ObjectLists>
 													</MusicTrackSequence>
+													<MusicTrackSequence Name="" ID="{EF42A91C-AA89-42B3-963D-7881894DFF06}"/>
+													<MusicTrackSequence Name="" ID="{636B5B66-BDE4-4388-80EC-C8EA38B322AA}"/>
 												</ObjectList>
 											</ObjectLists>
 										</MusicTrack>
@@ -1558,7 +1893,7 @@
 											<MusicCue Name="Exit Cue" ID="{4C460410-35DD-43EC-B2C5-FB2499950FB1}">
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
-													<Property Name="TimeMs" Type="Real64" Value="8000"/>
+													<Property Name="TimeMs" Type="Real64" Value="9000"/>
 												</PropertyList>
 											</MusicCue>
 										</ObjectList>
