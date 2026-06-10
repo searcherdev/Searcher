@@ -6,7 +6,7 @@
 				<GameParameter Name="Velocity" ID="{CAB4591E-792E-4B10-BC79-E59A225706B2}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="5.1"/>
+						<Property Name="Max" Type="Real64" Value="7.1"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

@@ -54,6 +54,9 @@
 						<Folder Name="N0MAD" ID="{D4586B34-DC71-4866-B3C2-CA3751E3CCB2}" ShortID="296461965">
 							<ChildrenList>
 								<BlendContainer Name="Ship Movement" ID="{2FC332EF-6814-41B6-B71B-78CB55F61973}" ShortID="41824219">
+									<PropertyList>
+										<Property Name="BlendBehavior" Type="int16" Value="1"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
@@ -64,6 +67,9 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Growl" ID="{972FECD9-452A-4CFC-9632-8E2524FB8128}" ShortID="247970937">
+											<PropertyList>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
@@ -197,7 +203,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>5.1</XPos>
+																				<XPos>7.1</XPos>
 																				<YPos>900</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -215,17 +221,17 @@
 													<CrossfadingInfo>
 														<LeftEdgePos>0</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
-														<RightEdgePos>5.0999745</RightEdgePos>
+														<RightEdgePos>7.0999645</RightEdgePos>
 														<RightFadingMode>None</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
 												<BlendTrackAssoc>
 													<ItemRef Name="Woosh" ID="{491A0BF9-F5E6-473D-AD6F-86CBCD3F260C}"/>
 													<CrossfadingInfo>
-														<LeftEdgePos>0.490371865384615</LeftEdgePos>
+														<LeftEdgePos>0.682674557692307</LeftEdgePos>
 														<LeftFadingMode>Automatic</LeftFadingMode>
 														<LeftFadingSegmentShape>Exp3</LeftFadingSegmentShape>
-														<RightEdgePos>5.1</RightEdgePos>
+														<RightEdgePos>7.1</RightEdgePos>
 														<RightFadingMode>Automatic</RightFadingMode>
 													</CrossfadingInfo>
 												</BlendTrackAssoc>
