@@ -11,6 +11,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="MX" ID="{A06E9126-201A-42B8-A9D9-EEC692279B70}">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ChildrenList>
 								<Bus Name="Explore" ID="{AB5743B4-12B1-43E5-9FFD-347D5F99928C}">
 									<ChildrenList>
