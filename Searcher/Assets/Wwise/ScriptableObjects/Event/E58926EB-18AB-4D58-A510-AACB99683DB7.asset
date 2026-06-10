@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b42d7cd36d339542a0f0d553a37b254, type: 3}
+  m_Name: E58926EB-18AB-4D58-A510-AACB99683DB7
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
+  objectName: N0madMove
+  id: 2048382520
+  guid: E58926EB-18AB-4D58-A510-AACB99683DB7
+  IsInUserDefinedSoundBank: 1

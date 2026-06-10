@@ -1,8 +1,9 @@
 using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
+using static UnityEngine.Rendering.DebugUI;
 
 public class N0MAD : MonoBehaviour
 {
@@ -40,6 +41,9 @@ public class N0MAD : MonoBehaviour
     private bool key1LastFrame;
     private bool key2ThisFrame;
     private bool key2LastFrame;
+
+    private Rigidbody2D rigidBody;
+
 
     //==== PROPERTIES ====
     public float Energy { get { return energy; } set { energy = value; } }
@@ -109,6 +113,9 @@ public class N0MAD : MonoBehaviour
         slotList.Add(slot1);
         slotList.Add(slot2);
         activeSlot = slot1;
+
+        //Set RigidBody
+        rigidBody = this.GetComponent<Rigidbody2D>();
     }
 
     //==== UPDATE ====
@@ -137,6 +144,9 @@ public class N0MAD : MonoBehaviour
 
         //Use Equipment (RMB) (this will eventually first loop through to find which Slot is selected, but for this first test is just for the Harvester)
         if (rmbThisFrame && !rmbLastFrame) { UseEquipment(activeSlot); }
+
+        //Play Music & Sounds
+        EngineSounds();
 
         //Update all mouse & keyboard bool states
         SetLastFrame();
@@ -198,5 +208,9 @@ public class N0MAD : MonoBehaviour
         //KEYBOARD
         key1LastFrame = key1ThisFrame;
         key2LastFrame = key2ThisFrame;
+    }
+    private void EngineSounds()
+    {
+        AkSoundEngine.SetRTPCValue("Velocity", rigidBody.linearVelocity.magnitude, gameObject); //Currently set to 7 in WWise but will eventually need to adapt based on different Engines
     }
 }
