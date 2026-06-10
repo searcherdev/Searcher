@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID N0MADMOVE = 2048382520U;
         static const AkUniqueID PAUSE = 3092587493U;
         static const AkUniqueID START = 1281810935U;
         static const AkUniqueID STOP = 788884573U;

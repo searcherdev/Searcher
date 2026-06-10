@@ -99,6 +99,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="N0madMove" ID="{E58926EB-18AB-4D58-A510-AACB99683DB7}">
+					<ChildrenList>
+						<Action Name="" ID="{0A1619AE-3C05-47D9-860E-E8617B773A7C}" ShortID="171258139">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ship Movement" ID="{2FC332EF-6814-41B6-B71B-78CB55F61973}" WorkUnitID="{8B095D4D-4B03-428F-B2F8-F65EB4830D4B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

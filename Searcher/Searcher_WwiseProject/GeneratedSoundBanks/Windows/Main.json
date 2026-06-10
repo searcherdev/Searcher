@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{292E6FCE-A9E6-4E86-BCD2-B07D9F14FACB}",
     "Language": "SFX",
-    "Hash": "{AD3C16BA-D376-4D67-87CB-9247F4B771F0}",
+    "Hash": "{198B780A-D8FE-6945-BB61-442ABB042ECB}",
     "ObjectPath": "\\SoundBanks\\Main\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -408,7 +408,44 @@
       "CachePath": "E6/{E6228570-47FD-9334-D72D-3CB8DF8BA119}.wem"
      }
     ],
+    "Plugins": {
+     "Custom": [
+      {
+       "Id": "645537257",
+       "Name": "Tone Generator",
+       "ObjectPath": "\\Containers\\SFX\\SFX\\SFX\\N0MAD\\Ship Movement\\Woosh\\Tone Generator",
+       "GUID": "{142DC800-B39C-4385-A030-A97B867F1A04}",
+       "LibName": "Wwise Tone Generator",
+       "LibId": "6684674"
+      },
+      {
+       "Id": "876753022",
+       "Name": "Synth One",
+       "ObjectPath": "\\Containers\\SFX\\SFX\\SFX\\N0MAD\\Ship Movement\\Growl\\Synth One",
+       "GUID": "{38E7D30A-AEBF-4487-BE1E-72D493791806}",
+       "LibName": "Wwise Synth One",
+       "LibId": "9699330"
+      }
+     ]
+    },
     "Events": [
+     {
+      "Id": "2048382520",
+      "Name": "N0madMove",
+      "ObjectPath": "\\Events\\Main\\N0madMove",
+      "GUID": "{E58926EB-18AB-4D58-A510-AACB99683DB7}",
+      "DurationType": "Infinite",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "645537257"
+        },
+        {
+         "Id": "876753022"
+        }
+       ]
+      }
+     },
      {
       "Id": "3092587493",
       "Name": "Pause",
@@ -671,6 +708,14 @@
       "DurationMax": "0"
      }
     ],
+    "GameParameters": [
+     {
+      "Id": "3519441192",
+      "Name": "Velocity",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Velocity",
+      "GUID": "{CAB4591E-792E-4B10-BC79-E59A225706B2}"
+     }
+    ],
     "StateGroups": [
      {
       "Id": "3161908922",
@@ -707,6 +752,6 @@
     ]
    }
   ],
-  "FileHash": "{E870105C-78DC-4D49-D415-60429D644FE2}"
+  "FileHash": "{429BA795-5A9C-135F-DBA1-E5ED793D4B18}"
  }
 }

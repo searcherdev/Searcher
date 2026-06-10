@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	788884573	Stop			\Main\Stop	
 	1256624823	ToExplore			\Main\States\ToExplore	
 	1281810935	Start			\Main\Start	
+	2048382520	N0madMove			\Main\N0madMove	
 	3092587493	Pause			\Main\States\Pause	
 	3412868374	UnPause			\Main\States\UnPause	
 	3532929732	ToTitle			\Main\States\ToTitle	
@@ -14,6 +15,16 @@ State	ID	Name	State Group			Notes
 	748895195	None	Main			
 	2764240573	Combat	Main			
 	3705726509	Title	Main			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	3519441192	Velocity			\Default Work Unit\Velocity	
+
+Modulator Envelope	ID	Name			Wwise Object Path	Notes
+	589602817	Modulator Envelope (Custom)				
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	645537257	Tone Generator	Wwise Tone Generator		\Containers\SFX\SFX\SFX\N0MAD\Ship Movement\Woosh\Tone Generator	
+	876753022	Synth One	Wwise Synth One		\Containers\SFX\SFX\SFX\N0MAD\Ship Movement\Growl\Synth One	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	10320113	Red	.cache\D2\{D21F7FF5-30C9-A6CB-44AE-FEC34694A6D5}.wem		\Containers\Music\Music\Music\Explore\Two Bar Tension\Red		787648
