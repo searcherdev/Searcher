@@ -26,10 +26,10 @@ public class N0MAD : MonoBehaviour
     private GameObject target;
     private GameObject manager;
 
-    private MonoBehaviour activeSlot;
-    private List<MonoBehaviour> slotList;
-    private MonoBehaviour slot1;
-    private MonoBehaviour slot2;
+    private Equipment activeSlot;
+    private List<Equipment> slotList;
+    private Equipment slot1;
+    private Equipment slot2;
 
     private bool rmbThisFrame;
     private bool rmbLastFrame;
@@ -52,10 +52,10 @@ public class N0MAD : MonoBehaviour
     public Harvester Harvester { get { return harvester; } set { harvester = value; } }
     public Weapon Weapon { get { return weapon; } set { weapon = value; } }
     public GameObject Target { get { return target; } set { target = value; } }
-    public List<MonoBehaviour> SlotList { get { return slotList; } }
-    public MonoBehaviour ActiveSlot { get { return activeSlot; } }
-    public MonoBehaviour Slot1 { get { return slot1; } set { slot1 = value; } }
-    public MonoBehaviour Slot2 { get { return slot2; } set { slot2 = value; } }
+    public List<Equipment> SlotList { get { return slotList; } }
+    public Equipment ActiveSlot { get { return activeSlot; } }
+    public Equipment Slot1 { get { return slot1; } set { slot1 = value; } }
+    public Equipment Slot2 { get { return slot2; } set { slot2 = value; } }
     
     //==== START ====
     void Start()
@@ -103,7 +103,7 @@ public class N0MAD : MonoBehaviour
         weapon.Range = 6f;
 
         //Set Equipment Slots (NOTE: THIS WILL NOT BE HOW THIS IS FILLED IN IN THE FINAL PRODUCT OBVIOUSLY)
-        slotList = new List<MonoBehaviour>();
+        slotList = new List<Equipment>();
         slot1 = harvester;
         slot2 = weapon;
         slotList.Add(slot1);
@@ -154,7 +154,7 @@ public class N0MAD : MonoBehaviour
     }
 
     //Activate or Deactivate the selected Equipment being used
-    private void UseEquipment(MonoBehaviour equipment)
+    private void UseEquipment(Equipment equipment)
     {
         switch (equipment)
         {

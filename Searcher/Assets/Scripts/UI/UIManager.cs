@@ -30,8 +30,8 @@ public class UIManager : MonoBehaviour
     private float maxEnergy;
     private float hull;
     private float maxHull;
-    private List<MonoBehaviour> slotList;
-    private MonoBehaviour activeSlot;
+    private List<Equipment> slotList;
+    private Equipment activeSlot;
     private Cargo cargo;
 
     private bool escKeyThisFrame;
@@ -85,53 +85,30 @@ public class UIManager : MonoBehaviour
         hullBarText.text = $"HULL [{hull} / {maxHull}]";
 
         //Update Equipment Slot UI
-        foreach (MonoBehaviour slot in slotList) //Loop through all equipment slots
+        foreach (Equipment slot in slotList) //Loop through all equipment slots
         {
             int index = slotList.IndexOf(slot); //Find the slot's index in slotList
             if (slot == activeSlot) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.green; } //If the slot is the active selected slot, highlight it green
             else { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.clear; } //If it's not active or selected, clear any highlight
 
-            switch (slot)
+            if (slot != activeSlot && slot.Active) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.cyan; } //If the slot isn't selected but its equipment is active, highlight it cyan
+
+            if (slot.Active) //Update equipment slot color scaling when active
             {
-                case Harvester h:
-                    if (slot != activeSlot && h.Active) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.cyan; } //If the slot isn't selected but its equipment is active, highlight it cyan
-                    
-                    if (h.Active) //Update equipment slot color scaling when active
-                    {
-                        Vector3 tempScale = equipmentSlots.transform.GetChild(index).GetChild(0).localScale;
-                        tempScale.x = h.Timer / h.Rate;
-                        equipmentSlots.transform.GetChild(index).GetChild(0).localScale = tempScale;
-                    }
-                    else //Set equipment slot color scaling to full when inactive
-                    {
-                        Vector3 tempScale = equipmentSlots.transform.GetChild(index).GetChild(0).localScale;
-                        tempScale.x = 1;
-                        equipmentSlots.transform.GetChild(index).GetChild(0).localScale = tempScale;
-                    }
-
-                    break;
-                case Weapon w:
-                    if (slot != activeSlot && w.Active) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.cyan; } //If the slot isn't selected but its equipment is active, highlight it cyan
-
-                    if (w.Active) //Update equipment slot color scaling when active
-                    {
-                        Vector3 tempScale = equipmentSlots.transform.GetChild(index).GetChild(0).localScale;
-                        tempScale.x = w.Timer / w.Rate;
-                        equipmentSlots.transform.GetChild(index).GetChild(0).localScale = tempScale;
-                    }
-                    else //Set equipment slot color scaling to full when inactive
-                    {
-                        Vector3 tempScale = equipmentSlots.transform.GetChild(index).GetChild(0).localScale;
-                        tempScale.x = 1;
-                        equipmentSlots.transform.GetChild(index).GetChild(0).localScale = tempScale;
-                    }
-
-                    break;
-                default: //If there's nothing in the Equipment slot, set it green or nuthin'
-                    if (slot == activeSlot) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.green; }
-                    else { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.clear; }
-                    break;
+                Vector3 tempScale = equipmentSlots.transform.GetChild(index).GetChild(0).localScale;
+                tempScale.x = slot.Timer / slot.Rate;
+                equipmentSlots.transform.GetChild(index).GetChild(0).localScale = tempScale;
             }
+            else //Set equipment slot color scaling to full when inactive
+            {
+                Vector3 tempScale = equipmentSlots.transform.GetChild(index).GetChild(0).localScale;
+                tempScale.x = 1;
+                equipmentSlots.transform.GetChild(index).GetChild(0).localScale = tempScale;
+            }
+
+            if (slot == activeSlot) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.green; } //If slot is selected, highlight it green
+            else if (slot != activeSlot && slot.Active) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.cyan; } //If the slot isn't selected but its equipment is active, highlight it cyan
+            else { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.clear; } //Otherwise, don't highlight it with any color
         }
 
         //Activate/Deactivate Menu

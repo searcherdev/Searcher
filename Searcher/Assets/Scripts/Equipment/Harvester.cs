@@ -52,6 +52,10 @@ public class Harvester : Equipment
                 SetInactive();
             }
         }
+        else //Otherwise, turn off the Harvester
+        {
+            SetInactive();
+        }
     }
 
     //==== METHODS ====
