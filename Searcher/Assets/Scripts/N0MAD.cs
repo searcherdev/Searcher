@@ -167,10 +167,10 @@ public class N0MAD : MonoBehaviour
                 }
                 break;
             case Weapon w:
-                if (!w.Active && target != null) { w.SetActive(target); } //If Weapon isn't active when clicked, activate it towards a target within range
+                if (!w.Active && target != null && !target.GetComponent<Nebula>()) { w.SetActive(target); } //If Weapon isn't active when clicked, activate it towards a target within range
                 else //If the Weapon is already active when clicked...
                 {
-                    if (target != null) { w.SetActive(target); } //If selecting a new target, switch to Active towards it
+                    if (target != null && !target.GetComponent<Nebula>()) { w.SetActive(target); } //If selecting a new target, switch to Active towards it
                     else { w.SetInactive(); } //If there's no target, deactivate Weapon
                 }
                 break;
