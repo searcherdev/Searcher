@@ -159,7 +159,7 @@
 														<Property Name="FixDur" Type="Real32" Value="10"/>
 														<Property Name="ReleaseTime" Type="Real32" Value="3.9"/>
 														<Property Name="SustainLevel" Type="Real32" Value="-18.5"/>
-														<Property Name="WaveGain" Type="Real32" Value="-15.8"/>
+														<Property Name="WaveGain" Type="Real32" Value="-29.5"/>
 														<Property Name="WaveType" Type="int32" Value="4"/>
 													</PropertyList>
 													<Language>SFX</Language>
