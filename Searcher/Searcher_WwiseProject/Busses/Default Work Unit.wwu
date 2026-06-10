@@ -10,7 +10,39 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Bus Name="MX" ID="{A06E9126-201A-42B8-A9D9-EEC692279B70}"/>
+						<Bus Name="MX" ID="{A06E9126-201A-42B8-A9D9-EEC692279B70}">
+							<ChildrenList>
+								<Bus Name="Explore" ID="{AB5743B4-12B1-43E5-9FFD-347D5F99928C}">
+									<ChildrenList>
+										<AuxBus Name="Reverb" ID="{BCC3D854-7CFB-42BB-AC18-DCCD5830511D}">
+											<ReferenceList>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb" ID="{BCC3D854-7CFB-42BB-AC18-DCCD5830511D}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+												</Reference>
+											</ReferenceList>
+											<ObjectLists>
+												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{20383842-DA23-4334-B653-F9EBE7C5F14E}" ShortID="804201248">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+																<ObjectRef Name="Room_Large" ID="{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+													<EffectSlot Name="" ID="{8D92960D-EC97-4603-8406-241CBE4845BE}" ShortID="379303412">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">
+																<ObjectRef Name="Bass" ID="{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</ObjectList>
+											</ObjectLists>
+										</AuxBus>
+									</ChildrenList>
+								</Bus>
+							</ChildrenList>
+						</Bus>
 						<Bus Name="SFX" ID="{EC5C97A4-EA4A-4B8B-A270-D8C6B5744195}"/>
 					</ChildrenList>
 				</Bus>

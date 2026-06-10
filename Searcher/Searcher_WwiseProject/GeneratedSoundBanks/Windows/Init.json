@@ -10,11 +10,29 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{F30D0CE6-91FE-5B7A-5E9F-71EF0388CE84}",
+    "Hash": "{4D4C625B-EC72-307B-B2A7-A94915A75CFA}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "602546716",
+       "Name": "Room_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Large",
+       "GUID": "{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "1291433344",
+       "Name": "Bass",
+       "ObjectPath": "\\Effects\\Factory Effects\\Flanger\\Flanging\\Bass",
+       "GUID": "{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}",
+       "LibName": "Wwise Flanger",
+       "LibId": "8192003"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -42,6 +60,12 @@
       "GUID": "{EC5C97A4-EA4A-4B8B-A270-D8C6B5744195}"
      },
      {
+      "Id": "579523862",
+      "Name": "Explore",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\MX\\Explore",
+      "GUID": "{AB5743B4-12B1-43E5-9FFD-347D5F99928C}"
+     },
+     {
       "Id": "1685527054",
       "Name": "MX",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\MX",
@@ -52,6 +76,32 @@
       "Name": "Main Audio Bus",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     }
+    ],
+    "AuxBusses": [
+     {
+      "Id": "348963605",
+      "Name": "Reverb",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\MX\\Explore\\Reverb",
+      "GUID": "{BCC3D854-7CFB-42BB-AC18-DCCD5830511D}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "602546716"
+        },
+        {
+         "Id": "1291433344"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\MX\\Explore\\Reverb",
+        "GUID": "{BCC3D854-7CFB-42BB-AC18-DCCD5830511D}"
+       }
+      ]
      }
     ],
     "GameParameters": [
@@ -98,6 +148,6 @@
     ]
    }
   ],
-  "FileHash": "{D4E4B9A5-3C0D-6835-E6DE-9E0225E05EA8}"
+  "FileHash": "{CFD9B04A-2273-C8CB-BE29-1099E83ABA1B}"
  }
 }

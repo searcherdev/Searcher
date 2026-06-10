@@ -68,14 +68,15 @@
 							<PropertyList>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>30</Value>
+										<Value>60</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
 								<Property Name="OverrideOutput" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-1</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -84,7 +85,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{3A10B4B5-9B7A-4586-B6A5-58F4BE5863BF}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="MX" ID="{A06E9126-201A-42B8-A9D9-EEC692279B70}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+									<ObjectRef Name="Explore" ID="{AB5743B4-12B1-43E5-9FFD-347D5F99928C}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
 								</Reference>
 								<Reference Name="PlaylistRoot">
 									<Custom>
@@ -240,6 +241,9 @@
 										</MusicTransition>
 									</Custom>
 								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb" ID="{BCC3D854-7CFB-42BB-AC18-DCCD5830511D}" WorkUnitID="{1FD179BA-5AE5-497B-963B-18F0CF1C1A2B}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
 								<MusicSegment Name="One Bar Tension" ID="{96DCA50C-44C5-48A8-8755-9A66DA8AD91B}" ShortID="278266922">
@@ -350,7 +354,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>1.50427</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -488,7 +492,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>1.50427</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -737,7 +741,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>0.50427</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -783,7 +787,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>0.50427</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>
@@ -880,7 +884,7 @@
 																					</Point>
 																					<Point>
 																						<XPos>1.5</XPos>
-																						<YPos>-0</YPos>
+																						<YPos>0</YPos>
 																						<Flags>0</Flags>
 																					</Point>
 																					<Point>

@@ -9,8 +9,16 @@ State	ID	Name	State Group			Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Main Audio Bus\SFX	
+	579523862	Explore			\Default Work Unit\Main Audio Bus\MX\Explore	
 	1685527054	MX			\Default Work Unit\Main Audio Bus\MX	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	Reverb			\Default Work Unit\Main Audio Bus\MX\Explore\Reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	602546716	Room_Large	Wwise RoomVerb			
+	1291433344	Bass	Wwise Flanger			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

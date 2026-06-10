@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{292E6FCE-A9E6-4E86-BCD2-B07D9F14FACB}",
     "Language": "SFX",
-    "Hash": "{54D3ED49-1DB3-795F-E4A6-9DDE032A7CC2}",
+    "Hash": "{AD3C16BA-D376-4D67-87CB-9247F4B771F0}",
     "ObjectPath": "\\SoundBanks\\Main\\Main",
     "ShortName": "Main",
     "Path": "Main.bnk",
@@ -425,6 +425,14 @@
       "ObjectPath": "\\Events\\Main\\Start",
       "GUID": "{6F71434E-0E48-47E8-B32B-C176BFCF55A4}",
       "DurationType": "Infinite",
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\MX\\Explore\\Reverb",
+        "GUID": "{BCC3D854-7CFB-42BB-AC18-DCCD5830511D}"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -699,6 +707,6 @@
     ]
    }
   ],
-  "FileHash": "{3B5BA617-D80B-2A30-00AE-CA4AA2CF3939}"
+  "FileHash": "{3C3C0A72-73BE-3606-B6D7-9FEB17D100AB}"
  }
 }

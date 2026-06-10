@@ -1,0 +1,67 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "348963605",
+    "Type": "Bus",
+    "GUID": "{BCC3D854-7CFB-42BB-AC18-DCCD5830511D}",
+    "Language": "SFX",
+    "Hash": "{0E33B30B-A05E-78AB-AE56-F743E26D29A0}",
+    "ObjectPath": "Reverb",
+    "ShortName": "Reverb",
+    "Path": "Bus/Reverb.bnk",
+    "Plugins": {
+     "ShareSets": [
+      {
+       "Id": "602546716",
+       "Name": "Room_Large",
+       "ObjectPath": "\\Effects\\Factory Effects\\RoomVerb\\Rooms\\Room_Large",
+       "GUID": "{AD8EFAFC-7121-4D5F-BE4D-B13FBD6CEBAE}",
+       "LibName": "Wwise RoomVerb",
+       "LibId": "7733251"
+      },
+      {
+       "Id": "1291433344",
+       "Name": "Bass",
+       "ObjectPath": "\\Effects\\Factory Effects\\Flanger\\Flanging\\Bass",
+       "GUID": "{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}",
+       "LibName": "Wwise Flanger",
+       "LibId": "8192003"
+      }
+     ]
+    },
+    "AuxBusses": [
+     {
+      "Id": "348963605",
+      "Name": "Reverb",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\MX\\Explore\\Reverb",
+      "GUID": "{BCC3D854-7CFB-42BB-AC18-DCCD5830511D}",
+      "PluginRefs": {
+       "ShareSets": [
+        {
+         "Id": "602546716"
+        },
+        {
+         "Id": "1291433344"
+        }
+       ]
+      },
+      "AuxBusRefs": [
+       {
+        "Id": "348963605",
+        "Name": "Reverb",
+        "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\MX\\Explore\\Reverb",
+        "GUID": "{BCC3D854-7CFB-42BB-AC18-DCCD5830511D}"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{E6752AFB-9BF3-5944-8E15-639A9D398594}"
+ }
+}
