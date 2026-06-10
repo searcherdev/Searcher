@@ -10,7 +10,7 @@
     "Type": "Bus",
     "GUID": "{BCC3D854-7CFB-42BB-AC18-DCCD5830511D}",
     "Language": "SFX",
-    "Hash": "{0E33B30B-A05E-78AB-AE56-F743E26D29A0}",
+    "Hash": "{B32C77B4-6E76-D204-FF9A-F9813F618E8D}",
     "ObjectPath": "Reverb",
     "ShortName": "Reverb",
     "Path": "Bus/Reverb.bnk",
@@ -31,6 +31,14 @@
        "GUID": "{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}",
        "LibName": "Wwise Flanger",
        "LibId": "8192003"
+      },
+      {
+       "Id": "3657550167",
+       "Name": "New_Parametric_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\New_Parametric_EQ",
+       "GUID": "{D57186EF-8B8E-464D-BD43-41DEF2D5E421}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
       }
      ]
     },
@@ -47,6 +55,9 @@
         },
         {
          "Id": "1291433344"
+        },
+        {
+         "Id": "3657550167"
         }
        ]
       },
@@ -62,6 +73,6 @@
     ]
    }
   ],
-  "FileHash": "{E6752AFB-9BF3-5944-8E15-639A9D398594}"
+  "FileHash": "{779847D0-06EC-2885-CD3C-2C3424FB7828}"
  }
 }

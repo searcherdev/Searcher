@@ -10,11 +10,21 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{4D4C625B-EC72-307B-B2A7-A94915A75CFA}",
+    "Hash": "{83DC3F31-8D21-B3A5-AF8B-C823E5624A5C}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "645798182",
+       "Name": "Chipmunk (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\MX\\Explore\\[Effect Slot [0]: (Pitch Shifter)]\\Chipmunk (Custom)",
+       "GUID": "{B3D9B5FD-26CC-4AE5-A7F1-2CEFBAD9CC9D}",
+       "LibName": "Wwise Pitch Shifter",
+       "LibId": "8912899"
+      }
+     ],
      "ShareSets": [
       {
        "Id": "602546716",
@@ -31,6 +41,14 @@
        "GUID": "{AB3CE4D4-B0DD-4FC2-AC1D-30EB749C5911}",
        "LibName": "Wwise Flanger",
        "LibId": "8192003"
+      },
+      {
+       "Id": "3657550167",
+       "Name": "New_Parametric_EQ",
+       "ObjectPath": "\\Effects\\Default Work Unit\\New_Parametric_EQ",
+       "GUID": "{D57186EF-8B8E-464D-BD43-41DEF2D5E421}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
       }
      ],
      "AudioDevices": [
@@ -63,7 +81,14 @@
       "Id": "579523862",
       "Name": "Explore",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\MX\\Explore",
-      "GUID": "{AB5743B4-12B1-43E5-9FFD-347D5F99928C}"
+      "GUID": "{AB5743B4-12B1-43E5-9FFD-347D5F99928C}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "645798182"
+        }
+       ]
+      }
      },
      {
       "Id": "1685527054",
@@ -91,6 +116,9 @@
         },
         {
          "Id": "1291433344"
+        },
+        {
+         "Id": "3657550167"
         }
        ]
       },
@@ -148,6 +176,6 @@
     ]
    }
   ],
-  "FileHash": "{CFD9B04A-2273-C8CB-BE29-1099E83ABA1B}"
+  "FileHash": "{EEC3A425-EBDE-968F-E5C9-ECD383E79C96}"
  }
 }
