@@ -22,6 +22,13 @@
 											</ReferenceList>
 											<ObjectLists>
 												<ObjectList Name="Effects">
+													<EffectSlot Name="" ID="{49739DC6-71ED-46EF-BF8F-DA70053A8437}" ShortID="1042604041">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<ObjectRef Name="New_Parametric_EQ" ID="{D57186EF-8B8E-464D-BD43-41DEF2D5E421}" WorkUnitID="{8295BA0C-1385-4C97-AF70-F3BE05102A88}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
 													<EffectSlot Name="" ID="{20383842-DA23-4334-B653-F9EBE7C5F14E}" ShortID="804201248">
 														<ReferenceList>
 															<Reference Name="Effect" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
@@ -40,6 +47,23 @@
 											</ObjectLists>
 										</AuxBus>
 									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{7BBC430B-7DD0-4DF5-9102-2F34CA63F34A}" ShortID="180543872">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom CreatedFrom="{54F9F04F-0D14-46AB-B38B-21CFD2EB46F6}">
+															<Effect Name="Chipmunk (Custom)" ID="{B3D9B5FD-26CC-4AE5-A7F1-2CEFBAD9CC9D}" ShortID="645798182" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+																<PropertyList>
+																	<Property Name="Pitch" Type="Real32" Value="-700"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
 								</Bus>
 							</ChildrenList>
 						</Bus>

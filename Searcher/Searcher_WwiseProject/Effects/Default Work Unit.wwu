@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8295BA0C-1385-4C97-AF70-F3BE05102A88}" SchemaVersion="133">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{8295BA0C-1385-4C97-AF70-F3BE05102A88}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8295BA0C-1385-4C97-AF70-F3BE05102A88}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Parametric_EQ" ID="{D57186EF-8B8E-464D-BD43-41DEF2D5E421}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FrequencyBand1" Type="Real32" Value="64.78085"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="163.1129"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="11658.83"/>
+						<Property Name="FrequencyBand4" Type="Real32" Value="679.6417"/>
+						<Property Name="FrequencyBand5" Type="Real32" Value="257.2794"/>
+						<Property Name="GainBand1" Type="Real32" Value="2.994413"/>
+						<Property Name="GainBand2" Type="Real32" Value="-0.04469274"/>
+						<Property Name="GainBand3" Type="Real32" Value="-3.798883"/>
+						<Property Name="GainBand4" Type="Real32" Value="0.4022346"/>
+						<Property Name="GainBand5" Type="Real32" Value="-24"/>
+						<Property Name="NumBands" Type="int32" Value="5"/>
+						<Property Name="OnOffBand3" Type="bool" Value="True"/>
+						<Property Name="OnOffBand4" Type="bool" Value="True"/>
+						<Property Name="OnOffBand5" Type="bool" Value="True"/>
+						<Property Name="QFactorBand4" Type="Real32" Value="2"/>
+						<Property Name="QFactorBand5" Type="Real32" Value="3.9"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Pitch_Shifter" ID="{77E4A173-1605-4CD2-A6D4-5C09919FD789}" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+					<PropertyList>
+						<Property Name="Pitch" Type="Real32" Value="-800"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>
