@@ -886,6 +886,7 @@ MonoBehaviour:
   equipmentSlots: {fileID: 432874874}
   s_Ore: {fileID: 2960617462384567580, guid: ea39e0f15549f61439e10e9f33960367, type: 3}
   s_Gas: {fileID: -6119182053690157374, guid: 15d23cd4f6f660e4bba677f50a9c53c4, type: 3}
+  ammoPrefab: {fileID: 1068118392862056522, guid: 33087b29dfc53c74d97c29f212188a31, type: 3}
   m_CargoPrefab: {fileID: 4714389948903516773, guid: feb646f7f8e37ab439cbd5bdd5022651, type: 3}
 --- !u!114 &309350836
 MonoBehaviour:
@@ -1101,14 +1102,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 1921865368834756953, guid: 17ef053e2cf92ab42ad3f906f0fb2283, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

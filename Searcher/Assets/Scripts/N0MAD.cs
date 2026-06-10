@@ -19,6 +19,7 @@ public class N0MAD : MonoBehaviour
     private Engine engine;
     private Cargo cargo;
     private Harvester harvester;
+    private Weapon weapon;
 
     private float timer;
 
@@ -49,6 +50,7 @@ public class N0MAD : MonoBehaviour
     public Engine Engine { get { return engine; } set { engine = value; } }
     public Cargo Cargo { get { return cargo; } set { cargo = value; } }
     public Harvester Harvester { get { return harvester; } set { harvester = value; } }
+    public Weapon Weapon { get { return weapon; } set { weapon = value; } }
     public GameObject Target { get { return target; } set { target = value; } }
     public List<MonoBehaviour> SlotList { get { return slotList; } }
     public MonoBehaviour ActiveSlot { get { return activeSlot; } }
@@ -95,10 +97,15 @@ public class N0MAD : MonoBehaviour
         harvester.Rate = 5f; //5 seconds per item harvested from target
         harvester.Range = 5f; //Only Harvest targets 5 units away
 
+        //Set Weapon
+        weapon = gameObject.AddComponent<Weapon>();
+        weapon.Rate = 0.5f;
+        weapon.Range = 6f;
+
         //Set Equipment Slots (NOTE: THIS WILL NOT BE HOW THIS IS FILLED IN IN THE FINAL PRODUCT OBVIOUSLY)
         slotList = new List<MonoBehaviour>();
         slot1 = harvester;
-        slot2 = null;
+        slot2 = weapon;
         slotList.Add(slot1);
         slotList.Add(slot2);
         activeSlot = slot1;
@@ -126,7 +133,7 @@ public class N0MAD : MonoBehaviour
         }
 
         //Engine Energy Reduction (only when Engine is in use)
-        if (engine.IsInUse) energy -= engine.Accel * Time.deltaTime;
+        if (engine.Active) energy -= engine.Accel * Time.deltaTime;
 
         //Use Equipment (RMB) (this will eventually first loop through to find which Slot is selected, but for this first test is just for the Harvester)
         if (rmbThisFrame && !rmbLastFrame) { UseEquipment(activeSlot); }
@@ -142,7 +149,7 @@ public class N0MAD : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         //Reduce Hull by an amount relative to the collision velocity magnitude and collider mass
-        hull -= (collision.relativeVelocity.magnitude + ((collision.gameObject.GetComponent<Rigidbody2D>().mass / 200) * collision.relativeVelocity.magnitude)) * (1 - hullResist);
+        if (collision.gameObject.GetComponent<Asteroid>()) { hull -= (collision.relativeVelocity.magnitude + ((collision.gameObject.GetComponent<Rigidbody2D>().mass / 200) * collision.relativeVelocity.magnitude)) * (1 - hullResist); }
         if (hull <= 0) SceneManager.LoadScene("Title Screen"); //Current "Death Condition" Result
     }
 
@@ -155,8 +162,16 @@ public class N0MAD : MonoBehaviour
                 if (!h.Active && target != null) { h.SetActive(target); } //If the Harvester isn't active when clicked, activate it towards a target within range
                 else //If the Harvester is active when clicked...
                 {
-                    if (target != null) { h.SetActive(target); Debug.Log("Target Changed"); } //If selecting a new target, switch to Active towards it
+                    if (target != null) { h.SetActive(target);} //If selecting a new target, switch to Active towards it
                     else { h.SetInactive(); } //If there's no target, deactivate Harvester
+                }
+                break;
+            case Weapon w:
+                if (!w.Active && target != null) { w.SetActive(target); } //If Weapon isn't active when clicked, activate it towards a target within range
+                else //If the Weapon is already active when clicked...
+                {
+                    if (target != null) { w.SetActive(target); } //If selecting a new target, switch to Active towards it
+                    else { w.SetInactive(); } //If there's no target, deactivate Weapon
                 }
                 break;
             default:

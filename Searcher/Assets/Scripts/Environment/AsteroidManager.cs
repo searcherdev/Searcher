@@ -15,17 +15,12 @@ public class AsteroidManager : MonoBehaviour
     private float camHeight;
     private float camWidth;
 
-    private Collisions collisions;
-
     //==== PROPERTIES ====
     public List<GameObject> Asteroids { get { return asteroids; } }
 
     //==== START ====
     void Start()
     {
-        //Set Collisions
-        collisions = new Collisions();
-        
         //Set Camera
         cam = Camera.main;
         camHeight = cam.orthographicSize * 2.0f;
@@ -60,11 +55,19 @@ public class AsteroidManager : MonoBehaviour
             if (canSpawn) { asteroids.Add(Instantiate(asteroid, astPos, Quaternion.identity, transform)); } //If an asteroid can spawn, spawn it & add to the asteroids list
             else { i -= 1; } //If it can't, redo this asteroid spawn process
         }
-    }
+    }   
 
     //==== UPDATE ====
     void Update()
     {
         
+    }
+
+    //==== METHODS ====
+    public void DestroyAsteroid(GameObject a)
+    {
+        //Destroy target asteroid
+        asteroids.Remove(a);
+        Destroy(a.gameObject);
     }
 }

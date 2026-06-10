@@ -19,6 +19,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] Sprite s_Ore;
     [SerializeField] Sprite s_Gas;
+    [SerializeField] GameObject ammoPrefab;
 
     private bool menuActive;
     [SerializeField] GameObject m_CargoPrefab;
@@ -37,6 +38,9 @@ public class UIManager : MonoBehaviour
     private bool escKeyLastFrame;
     private bool cKeyThisFrame;
     private bool cKeyLastFrame;
+
+    //==== PROPERTIES ====
+    public GameObject AmmoPrefab { get { return ammoPrefab; } } //NOT FINAL - system of finding this will change IMMINENTLY
     
     //==== START ====
     void Start()
@@ -84,17 +88,35 @@ public class UIManager : MonoBehaviour
         foreach (MonoBehaviour slot in slotList) //Loop through all equipment slots
         {
             int index = slotList.IndexOf(slot); //Find the slot's index in slotList
+            if (slot == activeSlot) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.green; } //If the slot is the active selected slot, highlight it green
+            else { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.clear; } //If it's not active or selected, clear any highlight
+
             switch (slot)
             {
                 case Harvester h:
-                    if (slot == activeSlot) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.green; } //If the slot is the active selected slot, highlight it green
-                    else if (slot != activeSlot && h.Active) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.cyan; } //If the slot isn't selected but its equipment is active, highlight it yellow
-                    else { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.clear; } //If it's not active or selected, clear any highlight
-
+                    if (slot != activeSlot && h.Active) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.cyan; } //If the slot isn't selected but its equipment is active, highlight it cyan
+                    
                     if (h.Active) //Update equipment slot color scaling when active
                     {
                         Vector3 tempScale = equipmentSlots.transform.GetChild(index).GetChild(0).localScale;
                         tempScale.x = h.Timer / h.Rate;
+                        equipmentSlots.transform.GetChild(index).GetChild(0).localScale = tempScale;
+                    }
+                    else //Set equipment slot color scaling to full when inactive
+                    {
+                        Vector3 tempScale = equipmentSlots.transform.GetChild(index).GetChild(0).localScale;
+                        tempScale.x = 1;
+                        equipmentSlots.transform.GetChild(index).GetChild(0).localScale = tempScale;
+                    }
+
+                    break;
+                case Weapon w:
+                    if (slot != activeSlot && w.Active) { equipmentSlots.transform.GetChild(index).GetChild(0).GetComponent<Image>().color = Color.cyan; } //If the slot isn't selected but its equipment is active, highlight it cyan
+
+                    if (w.Active) //Update equipment slot color scaling when active
+                    {
+                        Vector3 tempScale = equipmentSlots.transform.GetChild(index).GetChild(0).localScale;
+                        tempScale.x = w.Timer / w.Rate;
                         equipmentSlots.transform.GetChild(index).GetChild(0).localScale = tempScale;
                     }
                     else //Set equipment slot color scaling to full when inactive
@@ -117,12 +139,15 @@ public class UIManager : MonoBehaviour
         { 
             menuInstance = Instantiate(m_CargoPrefab); 
             menuActive = true; 
+            AkSoundEngine.PostEvent("Pause", gameObject);
+
         }
         else if (menuActive && menuInstance != null && (escKeyThisFrame && !escKeyLastFrame)) //Deactivate
         { 
             Destroy(menuInstance.gameObject); 
             menuInstance = null; 
-            menuActive = false; 
+            menuActive = false;
+            AkSoundEngine.PostEvent("UnPause", gameObject);
         }
 
         //If the menu is active, populate its inventory UI [WILL NEED TO BE UPDATED TO FUNCTION DEPENDING ON WHICH MENU IS OPEN]

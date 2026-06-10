@@ -8,6 +8,7 @@ public class PlayButton : MonoBehaviour
     //==== START ====
     void Start()
     {
+        AkSoundEngine.PostEvent("ToTitle", gameObject);
         button = this.GetComponent<Button>();
         button.onClick.AddListener(NewScene);
     }
@@ -15,6 +16,7 @@ public class PlayButton : MonoBehaviour
     void NewScene()
     {
         SceneManager.LoadScene("Testing Workshop");
+        AkSoundEngine.PostEvent("ToExplore", gameObject);
     }
 
 }

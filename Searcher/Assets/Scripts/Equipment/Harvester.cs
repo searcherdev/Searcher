@@ -3,17 +3,9 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Harvester : MonoBehaviour
+public class Harvester : Equipment
 {
     //==== FIELDS ====
-    private float rate; //How many seconds per item harvested
-    private float timer; //Ticking away time between usages
-    private bool active; //Is the Harvester in use?
-    private float range; //How far away can the Harvester harvest?
-
-    private N0MAD n0mad;
-    private GameObject target;
-    private GameObject manager;
     private Collisions collisions;
 
     private GameObject cursorPrefab;
@@ -22,21 +14,11 @@ public class Harvester : MonoBehaviour
     LineRenderer line;
 
     //==== PROPERTIES ====
-    public float Rate { get { return rate; } set { rate = value; } }
-    public float Range { get { return range; } set { range = value; } }
-    public bool Active { get { return active; } }
-    public float Timer { get { return timer; } }
-    public GameObject Target { get { return target; } }
     public GameObject CursorInstance { get { return cursorInstance; } }
     
     //==== START ====
     void Start()
     {
-        n0mad = GameObject.FindGameObjectWithTag("Player").GetComponent<N0MAD>();
-        active = false;
-        timer = 0f;
-
-        manager = GameObject.FindGameObjectWithTag("Manager");
         cursorPrefab = manager.GetComponent<Cursor>().CursorPrefab;
         cursorInstance = null;
 
