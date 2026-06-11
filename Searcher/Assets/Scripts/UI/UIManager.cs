@@ -22,7 +22,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] GameObject ammoPrefab;
 
     private bool menuActive;
-    [SerializeField] GameObject m_CargoPrefab;
+    [SerializeField] GameObject m_CraftingPrefab;
     private GameObject menuInstance;
 
     N0MAD n0mad;
@@ -114,7 +114,7 @@ public class UIManager : MonoBehaviour
         //Activate/Deactivate Menu
         if (!menuActive && menuInstance == null && ((escKeyThisFrame && !escKeyLastFrame) || (cKeyThisFrame && !cKeyLastFrame))) //Activate
         { 
-            menuInstance = Instantiate(m_CargoPrefab); 
+            menuInstance = Instantiate(m_CraftingPrefab); 
             menuActive = true; 
             AkSoundEngine.PostEvent("Pause", gameObject);
 

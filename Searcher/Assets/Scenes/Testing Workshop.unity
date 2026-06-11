@@ -887,7 +887,7 @@ MonoBehaviour:
   s_Ore: {fileID: 2960617462384567580, guid: ea39e0f15549f61439e10e9f33960367, type: 3}
   s_Gas: {fileID: -6119182053690157374, guid: 15d23cd4f6f660e4bba677f50a9c53c4, type: 3}
   ammoPrefab: {fileID: 1068118392862056522, guid: 33087b29dfc53c74d97c29f212188a31, type: 3}
-  m_CargoPrefab: {fileID: 4714389948903516773, guid: feb646f7f8e37ab439cbd5bdd5022651, type: 3}
+  m_CraftingPrefab: {fileID: 4714389948903516773, guid: feb646f7f8e37ab439cbd5bdd5022651, type: 3}
 --- !u!114 &309350836
 MonoBehaviour:
   m_ObjectHideFlags: 0

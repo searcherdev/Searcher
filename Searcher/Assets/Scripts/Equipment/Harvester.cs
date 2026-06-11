@@ -65,8 +65,8 @@ public class Harvester : Equipment
         switch (targetClass)
         {
             case Asteroid a: //Take an Ore or Gas from an Asteroid
-                int randNum = Random.Range(1, 3);
-                if (randNum == 1 && a.Gas > 0) //Take a Gas if there's a Gas to take and that's what was rolled
+                int randNum = Random.Range(1, 5);
+                if (randNum == 1 && a.Gas > 0 || a.Ore <= 0) //Take a Gas if there's a Gas to take and that's what was rolled
                 {
                     a.Gas--;
                     if (n0mad.Cargo.Hold.ContainsKey("Gas")) { n0mad.Cargo.Hold["Gas"]++; }
